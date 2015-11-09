@@ -1,7 +1,7 @@
 
 {
   "name":"oneup/contao-points-of-interest",
-  "description":"Use this resource to highlight the points of interest of your products. Just a click to open a brief description of each point, allowing your user to get a deep and fast understanding of your product features.",
+  "description":"Use this Contao module to highlight the points of interest of your products. Just a click to open a brief description of each point, allowing your user to get a deep and fast understanding of your product features.",
   "keywords":["contao", "points of interest", "POI", "jquery"],
   "type":"contao-module",
   "homepage":"http://1up.io",
