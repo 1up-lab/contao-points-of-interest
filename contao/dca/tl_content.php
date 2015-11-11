@@ -4,9 +4,9 @@ if (TL_MODE === 'BE') {
     // Dynamically add the parent table
     if (Input::get('do') == 'points_of_interest') {
         $GLOBALS['TL_DCA']['tl_content']['config']['ptable'] = 'tl_point_of_interest';
-    }
 
-    $this->loadLanguageFile('tl_module');
+        $this->loadLanguageFile('tl_module');
+    }
 }
 
 $GLOBALS['TL_DCA']['tl_content']['palettes']['points_of_interest'] = '{title_legend},name,headline,type,poi_id';

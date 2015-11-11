@@ -1,70 +1,70 @@
 <?xml version="1.0" ?><xliff version="1.1">
-    <file datatype="php" source-language="en">
+    <file datatype="php" original="system/modules/points-of-interest/languages/en/tl_point_of_interest.php" source-language="en">
         <body>
             <!-- Controls -->
             <trans-unit id="tl_point_of_interest.new.0">
-                <target>New entry</target>
+                <source>New entry</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.edit.1">
-                <target>Edit content</target>
+                <source>Edit content</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.editheader.1">
-                <target>Edit entry</target>
+                <source>Edit entry</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.copy.1">
-                <target>Copy entry</target>
+                <source>Copy entry</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.cut.1">
-                <target>Move entry</target>
+                <source>Move entry</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.delete.1">
-                <target>Delete entry</target>
+                <source>Delete entry</source>
             </trans-unit>>
             <trans-unit id="tl_point_of_interest.show.1">
-                <target>Show details</target>
+                <source>Show details</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.toggle.1">
-                <target>Toggle visibility</target>
+                <source>Toggle visibility</source>
             </trans-unit>
 
             <!-- Legends -->
             <trans-unit id="tl_point_of_interest.title_legend">
-                <target>Title</target>
+                <source>Title</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.configuration_legend">
-                <target>Configuration</target>
+                <source>Configuration</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.publish_legend">
-                <target>Visibility</target>
+                <source>Visibility</source>
             </trans-unit>
 
             <!-- Fields -->
             <trans-unit id="tl_point_of_interest.title.0">
-                <target>Title</target>
+                <source>Title</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.title.1">
-                <target>Provide a title for this entry.</target>
+                <source>Provide a title for this entry.</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.position.0">
-                <target>Position</target>
+                <source>Position</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.position.1">
-                <target>Choose the position of the point directly on the image.</target>
+                <source>Choose the position of the point directly on the image.</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.published.0">
-                <target>Published</target>
+                <source>Published</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.start.0">
-                <target>Start</target>
+                <source>Start</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.start.1">
-                <target>Visible from...</target>
+                <source>Visible from...</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.stop.0">
-                <target>Stop</target>
+                <source>Stop</source>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.stop.1">
-                <target>Visible until...</target>
+                <source>Visible until...</source>
             </trans-unit>
         </body>
     </file>

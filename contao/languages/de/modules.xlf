@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><xliff version="1.1">
-    <file datatype="php" source-language="de">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+    <file datatype="php" original="system/modules/points-of-interest/languages/de/modules.php" source-language="de">
         <body>
             <trans-unit id="MOD.points_of_interest.0">
                 <target>Points of Interest</target>

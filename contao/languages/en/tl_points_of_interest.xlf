@@ -1,37 +1,37 @@
 <?xml version="1.0" ?><xliff version="1.1">
-    <file datatype="php" source-language="de">
+    <file datatype="php" original="system/modules/points-of-interest/languages/en/tl_points_of_interest.php" source-language="en">
         <body>
             <!-- Controls -->
             <trans-unit id="tl_points_of_interest.new.0">
-                <target>New entry</target>
+                <source>New entry</source>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.edit.1">
-                <target>Edit Points of Interest</target>
+                <source>Edit Points of Interest</source>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.editheader.1">
-                <target>Edit entry</target>
+                <source>Edit entry</source>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.copy.1">
-                <target>Copy entry</target>
+                <source>Copy entry</source>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.delete.1">
-                <target>Delete entry</target>
+                <source>Delete entry</source>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.show.1">
-                <target>Show details</target>
+                <source>Show details</source>
             </trans-unit>
 
             <!-- Legends -->
             <trans-unit id="tl_points_of_interest.pois_legend">
-                <target>Image settings</target>
+                <source>Image settings</source>
             </trans-unit>
 
             <!-- Fields -->
             <trans-unit id="tl_points_of_interest.title.0">
-                <target>Title</target>
+                <source>Title</source>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.singleSRC.0">
-                <target>Image source</target>
+                <source>Image source</source>
             </trans-unit>
         </body>
     </file>
