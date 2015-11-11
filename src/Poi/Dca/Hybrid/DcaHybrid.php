@@ -24,7 +24,7 @@ class DcaHybrid extends Backend
         ]);
 
         while ($collection->next()) {
-            $pois[$collection->id] = $collection->name;
+            $pois[$collection->id] = $collection->title;
         }
 
         return $pois;

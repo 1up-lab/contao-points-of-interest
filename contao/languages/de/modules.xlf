@@ -2,6 +2,12 @@
 <xliff version="1.1">
     <file datatype="php" original="system/modules/points-of-interest/languages/de/modules.php" source-language="de">
         <body>
+            <trans-unit id="CTE.points_of_interest.0">
+                <source>Points of interest (POI)</source>
+            </trans-unit>
+            <trans-unit id="CTE.points_of_interest.1">
+                <source>Erzeugt ein Bild mit klickbaren Info-Punkten (POI).</source>
+            </trans-unit>
             <trans-unit id="MOD.points_of_interest.0">
                 <target>Points of Interest</target>
             </trans-unit>

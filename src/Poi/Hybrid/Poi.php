@@ -20,7 +20,7 @@ class Poi extends Hybrid
         if (TL_MODE === 'BE') {
             $template = new BackendTemplate('be_wildcard');
 
-            $template->wildcard = '### POINT OF INTERESTS ###';
+            $template->wildcard = '### POINTS OF INTEREST ###';
             $template->id = $this->id;
             $template->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id='.$this->id;
 

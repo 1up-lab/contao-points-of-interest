@@ -1,4 +1,4 @@
-Contao Points of interest (POI)
+Contao Points Of Interest (POI)
 ===============================
 
 Use this Contao module to highlight the points of interest of your products. Just a click to open a brief description of each point, allowing your user to get a deep and fast understanding of your product features. 
