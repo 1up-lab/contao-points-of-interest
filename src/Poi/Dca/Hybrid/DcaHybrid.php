@@ -20,7 +20,7 @@ class DcaHybrid extends Backend
         $pois = [];
 
         $collection = PointsOfInterestModel::findAll([
-            'order' => 'name ASC',
+            'order' => 'title ASC',
         ]);
 
         while ($collection->next()) {
