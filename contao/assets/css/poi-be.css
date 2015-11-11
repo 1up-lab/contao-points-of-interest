@@ -1,0 +1,41 @@
+#tl_point_of_interest #ctrl_position {
+    display: none;
+}
+
+#tl_point_of_interest img#poi-position-image {
+    padding: 2px;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 1px 3px #ddd;
+    position: relative;
+}
+
+#tl_point_of_interest div.poi {
+    position: relative;
+}
+
+#tl_point_of_interest span.marker.not-set {
+    opacity: 0;
+}
+
+#tl_point_of_interest span.marker {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background-color: #f00;
+    transition: all 300ms ease-out;
+    opacity: 1;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+#tl_point_of_interest span.marker.not-set {
+    display: none;
+}

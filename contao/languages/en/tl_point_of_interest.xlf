@@ -1,0 +1,71 @@
+<?xml version="1.0" ?><xliff version="1.1">
+    <file datatype="php" source-language="en">
+        <body>
+            <!-- Controls -->
+            <trans-unit id="tl_point_of_interest.new.0">
+                <target>New entry</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.edit.1">
+                <target>Edit content</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.editheader.1">
+                <target>Edit entry</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.copy.1">
+                <target>Copy entry</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.cut.1">
+                <target>Move entry</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.delete.1">
+                <target>Delete entry</target>
+            </trans-unit>>
+            <trans-unit id="tl_point_of_interest.show.1">
+                <target>Show details</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.toggle.1">
+                <target>Toggle visibility</target>
+            </trans-unit>
+
+            <!-- Legends -->
+            <trans-unit id="tl_point_of_interest.title_legend">
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.configuration_legend">
+                <target>Configuration</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.publish_legend">
+                <target>Visibility</target>
+            </trans-unit>
+
+            <!-- Fields -->
+            <trans-unit id="tl_point_of_interest.title.0">
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.title.1">
+                <target>Provide a title for this entry.</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.position.0">
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.position.1">
+                <target>Choose the position of the point directly on the image.</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.published.0">
+                <target>Published</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.start.0">
+                <target>Start</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.start.1">
+                <target>Visible from...</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.stop.0">
+                <target>Stop</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.stop.1">
+                <target>Visible until...</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

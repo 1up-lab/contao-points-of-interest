@@ -1,0 +1,129 @@
+.poi-wrapper {
+    position: relative;
+}
+
+.single-point {
+    position: absolute;
+    border-radius: 50%;
+    display: block;
+}
+
+.single-point > a {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: inherit;
+    background: #d95353;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.single-point > a::after, .single-point > a:before {
+    /* rotating plus icon */
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.single-point > a:after {
+    height: 2px;
+    width: 12px;
+}
+
+.single-point > a:before {
+    height: 12px;
+    width: 2px;
+}
+
+.single-point:after {
+    /* this is used to create the pulse animation */
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    background-color: transparent;
+    -webkit-animation: pulse 2s infinite;
+    -moz-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+
+.img-replace {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.single-point.is-open > a:after, .single-point.is-open > a:before {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+    -o-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+    transform: translateX(-50%) translateY(-50%) rotate(135deg);
+}
+
+.single-point.is-open::after {
+    /* remove pulse effect */
+    display: none;
+}
+
+.single-point.is-open .more-info {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+}
+
+.single-point.visited > a {
+    background-color: #475f74;
+}
+
+.single-point.visited::after {
+    /* pulse effect no more active on visited elements */
+    display: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+    }
+
+    50% {
+        box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+    }
+
+    100% {
+        transform: scale(1.6);
+        box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+    }
+}
