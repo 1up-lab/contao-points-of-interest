@@ -1,3 +1,7 @@
+.single-point .reveal-modal {
+    display: none;
+}
+
 .poi-wrapper {
     position: relative;
 }
@@ -6,6 +10,8 @@
     position: absolute;
     border-radius: 50%;
     display: block;
+    margin-top: -15px; /* half the height of the inside a */
+    margin-left: -15px; /* half the width of the inside a */
 }
 
 .single-point > a {

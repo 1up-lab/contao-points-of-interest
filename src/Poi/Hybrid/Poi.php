@@ -95,5 +95,6 @@ class Poi extends Hybrid
         $this->Template->pointOfInterest = $arrPois;
 
         $GLOBALS['TL_CSS'][] = 'system/modules/points-of-interest/assets/css/poi.css||static';
+        $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/points-of-interest/assets/js/poi.js';
     }
 }
