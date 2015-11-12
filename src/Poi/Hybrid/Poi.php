@@ -33,7 +33,7 @@ class Poi extends Hybrid
     protected function compile()
     {
         $parent = $this->getParent();
-        $poi = PointsOfInterestModel::findBy('id', $parent->poi_id);
+        $poi = PointsOfInterestModel::findOneBy('id', $parent->poi_id);
         $pois = PointOfInterestModel::findBy('pid', $poi->id);
 
         $fileModel = FilesModel::findByUuid($poi->singleSRC);
@@ -94,7 +94,12 @@ class Poi extends Hybrid
 
         $this->Template->pointOfInterest = $arrPois;
 
-        $GLOBALS['TL_CSS'][] = 'system/modules/points-of-interest/assets/css/poi.css||static';
-        $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/points-of-interest/assets/js/poi.js';
+        if ((int) $poi->includeCss) {
+            $GLOBALS['TL_CSS'][] = 'system/modules/points-of-interest/assets/css/poi.css||static';
+        }
+
+        if ((int) $poi->includeJs) {
+            $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/points-of-interest/assets/js/poi.js';
+        }
     }
 }

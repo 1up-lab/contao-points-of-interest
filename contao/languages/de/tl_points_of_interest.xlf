@@ -30,8 +30,26 @@
             <trans-unit id="tl_points_of_interest.title.0">
                 <target>Titel</target>
             </trans-unit>
+            <trans-unit id="tl_points_of_interest.title.1">
+                <target>Titel dieser Konfiguration (nur im Backend sichtbar).</target>
+            </trans-unit>
             <trans-unit id="tl_points_of_interest.singleSRC.0">
                 <target>Bildquelle</target>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.singleSRC.1">
+                <target>Wählen Sie das gewünschte Bild.</target>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeCss.0">
+                <source>CSS einbinden</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeCss.1">
+                <source>Wenn ausgwählt, wird das mitgelieferte Stylesheet eingebunden.</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeJs.0">
+                <source>JS einbinden</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeJs.1">
+                <source>Wenn ausgwählt, wird das mitgelieferte Javascript eingebunden.</source>
             </trans-unit>
         </body>
     </file>

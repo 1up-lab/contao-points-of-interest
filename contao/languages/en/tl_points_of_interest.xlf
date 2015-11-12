@@ -30,8 +30,26 @@
             <trans-unit id="tl_points_of_interest.title.0">
                 <source>Title</source>
             </trans-unit>
+            <trans-unit id="tl_points_of_interest.title.1">
+                <source>Title of this POI configuration (only visible in the backend).</source>
+            </trans-unit>
             <trans-unit id="tl_points_of_interest.singleSRC.0">
                 <source>Image source</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.singleSRC.1">
+                <source>Choose your image here.</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeCss.0">
+                <source>Include CSS</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeCss.1">
+                <source>If checked, the built-in Stylesheet will be included.</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeJs.0">
+                <source>Include JS</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeJs.1">
+                <source>If checked, the built-in Javascript will be included.</source>
             </trans-unit>
         </body>
     </file>

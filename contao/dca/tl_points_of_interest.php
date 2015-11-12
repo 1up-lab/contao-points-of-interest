@@ -65,7 +65,7 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
     ],
 
     'palettes' => [
-        'default' => '{pois_legend},title,singleSRC,size',
+        'default' => '{pois_legend},title,singleSRC,includeCss,includeJs',
     ],
 
     'fields' => [
@@ -100,6 +100,32 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
             'save_callback' => [
                 ['Oneup\Contao\Poi\Dca\Hybrid\DcaHybrid', 'storeFileMetaInformation'],
             ],
+        ],
+        'includeCss' => [
+            'label' => &$GLOBALS['TL_LANG']['tl_points_of_interest']['includeCss'],
+            'exclude' => true,
+            'filter' => true,
+            'default' => '1',
+            'flag' => 1,
+            'inputType' => 'checkbox',
+            'eval' => [
+                'doNotCopy' => true,
+                'tl_class' => 'w50',
+            ],
+            'sql' => "char(1) NOT NULL default '1'",
+        ],
+        'includeJs' => [
+            'label' => &$GLOBALS['TL_LANG']['tl_points_of_interest']['includeJs'],
+            'exclude' => true,
+            'filter' => true,
+            'default' => '1',
+            'flag' => 1,
+            'inputType' => 'checkbox',
+            'eval' => [
+                'doNotCopy' => true,
+                'tl_class' => 'w50',
+            ],
+            'sql' => "char(1) NOT NULL default '1'",
         ],
     ],
 ];
