@@ -5,6 +5,8 @@ namespace Oneup\Contao\Poi\Dca\Hybrid;
 use Contao\FilesModel;
 use Contao\Input;
 use Contao\Backend;
+use Contao\ContentModel;
+use Contao\Message;
 use Oneup\Contao\Poi\Model\PointsOfInterestModel;
 
 class DcaHybrid extends Backend
@@ -62,5 +64,29 @@ class DcaHybrid extends Backend
         }
 
         return $varValue;
+    }
+
+    public function showJsLibraryHint($dc)
+    {
+        if ($_POST || Input::get('act') != 'edit') {
+            return;
+        }
+
+        // Return if the user cannot access the layout module (see #6190)
+        if (!$this->User->hasAccess('themes', 'modules') || !$this->User->hasAccess('layout', 'themes')) {
+            return;
+        }
+
+        $objCte = ContentModel::findByPk($dc->id);
+
+        if ($objCte === null) {
+            return;
+        }
+
+        switch ($objCte->type) {
+            case 'points_of_interest':
+                Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplate'], 'j_colorbox'));
+                break;
+        }
     }
 }

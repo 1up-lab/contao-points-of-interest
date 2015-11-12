@@ -1,5 +1,7 @@
 <?php
 
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = ['Oneup\Contao\Poi\Dca\Hybrid\DcaHybrid', 'showJsLibraryHint'];
+
 $GLOBALS['TL_DCA']['tl_module']['palettes']['points_of_interest'] = '{title_legend},name,headline,type,poi_id';
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['poi_id'] = [
