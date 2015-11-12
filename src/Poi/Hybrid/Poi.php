@@ -13,7 +13,7 @@ use Oneup\Contao\Poi\Model\PointsOfInterestModel;
 
 class Poi extends Hybrid
 {
-    protected $strTemplate = "poi_default";
+    protected $strKey = 'poi';
 
     public function generate()
     {
@@ -57,7 +57,7 @@ class Poi extends Hybrid
             $tempPoi['position']['pX'] = round(100 / $imgSize[0] * $tempPoi['position']['x'], 3);
             $tempPoi['position']['pY'] = round(100 / $imgSize[1] * $tempPoi['position']['y'], 3);
 
-            $elements = array();
+            $elements = [];
             $content = ContentModel::findPublishedByPidAndTable($tempPoi['id'], 'tl_point_of_interest');
 
             if ($content !== null) {
@@ -65,7 +65,7 @@ class Poi extends Hybrid
                 $last = $content->count() - 1;
 
                 while ($content->next()) {
-                    $css = array();
+                    $css = [];
 
                     /** @var ContentModel $objRow */
                     $row = $content->current();

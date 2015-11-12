@@ -6,4 +6,6 @@ $templatesFolder = version_compare(VERSION, '4.0', '>=')
 
 TemplateLoader::addFiles([
     'poi_default' => $templatesFolder,
+    'ce_poi' => $templatesFolder,
+    'mod_poi' => $templatesFolder,
 ]);

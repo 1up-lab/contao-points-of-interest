@@ -6,13 +6,6 @@ use Oneup\Contao\Poi\Hybrid\Poi as BasePoi;
 
 class Poi extends BasePoi
 {
-    public function generate()
-    {
-        return parent::generate();
-    }
-
-    protected function compile()
-    {
-        parent::compile();
-    }
+    protected $strTemplate = 'mod_poi';
+    protected $typePrefix = 'mod_';
 }

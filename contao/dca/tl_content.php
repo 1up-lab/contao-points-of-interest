@@ -9,6 +9,8 @@ if (TL_MODE === 'BE') {
     }
 }
 
+$GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = ['Oneup\Contao\Poi\Dca\Content\DcaContent', 'showJsLibraryHint'];
+
 $GLOBALS['TL_DCA']['tl_content']['palettes']['points_of_interest'] = '{title_legend},name,headline,type,poi_id';
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['poi_id'] = [
