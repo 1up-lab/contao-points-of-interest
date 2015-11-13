@@ -5,7 +5,7 @@
             <?php foreach($this->pointOfInterest as $poi): ?>
                 <li class="single-point" style="top: <?= $poi['position']['pY']; ?>%; left: <?= $poi['position']['pX']; ?>%;">
                     <a class="img-replace poi" href="" data-reveal-id="reveal-<?= $poi['id']; ?>">More</a>
-                    <div id="reveal-<?= $poi['id']; ?>" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                    <div id="reveal-<?= $poi['id']; ?>" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
                         <?= implode('', $poi['content']); ?>
                     </div>
                 </li>
