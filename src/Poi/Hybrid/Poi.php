@@ -71,14 +71,12 @@ class Poi extends Hybrid
                     $row = $content->current();
 
                     // Add the "first" and "last" classes (see #2583)
-                    if ($count == 0 || $count == $last) {
-                        if ($count == 0) {
-                            $css[] = 'first';
-                        }
+                    if ($count == 0) {
+                        $css[] = 'first';
+                    }
 
-                        if ($count == $count) {
-                            $css[] = 'last';
-                        }
+                    if ($count == $last) {
+                        $css[] = 'last';
                     }
 
                     $row->classes = $css;
