@@ -4,7 +4,6 @@ namespace Oneup\Contao\Poi\Hybrid;
 
 use Contao\Hybrid;
 use Contao\FilesModel;
-use Contao\File;
 use Contao\Image;
 use Contao\ContentModel;
 use Contao\BackendTemplate;
@@ -38,7 +37,7 @@ class Poi extends Hybrid
 
         $fileModel = FilesModel::findByUuid($poi->singleSRC);
 
-        $file = new File($fileModel->path);
+        $file = new \File($fileModel->path);
         $img = new Image($file);
 
         $imgSize = $file->imageSize;
