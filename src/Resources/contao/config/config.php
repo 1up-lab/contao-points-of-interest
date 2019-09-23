@@ -7,11 +7,12 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 /** @var RequestStack $requestStack */
 $requestStack = \Contao\System::getContainer()->get('request_stack');
+$request = $requestStack->getCurrentRequest();
 
 /** @var ScopeMatcher $scopeMatcher */
 $scopeMatcher = \Contao\System::getContainer()->get('contao.routing.scope_matcher');
 
-if ($scopeMatcher->isBackendRequest($requestStack->getCurrentRequest())) {
+if ($request instanceof \Symfony\Component\HttpFoundation\Request && $scopeMatcher->isBackendRequest($request)) {
     $GLOBALS['TL_CSS'][] = 'bundles/oneupcontaopointsofinterest/css/poi-be.css';
     $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/oneupcontaopointsofinterest/js/poi-be.js';
 }

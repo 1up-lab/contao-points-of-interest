@@ -7,11 +7,12 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 /** @var RequestStack $requestStack */
 $requestStack = \Contao\System::getContainer()->get('request_stack');
+$request = $requestStack->getCurrentRequest();
 
 /** @var ScopeMatcher $scopeMatcher */
 $scopeMatcher = \Contao\System::getContainer()->get('contao.routing.scope_matcher');
 
-if ('points_of_interest' === \Contao\Input::get('do') && $scopeMatcher->isBackendRequest($requestStack->getCurrentRequest())) {
+if ($request instanceof \Symfony\Component\HttpFoundation\Request && 'points_of_interest' === \Contao\Input::get('do') && $scopeMatcher->isBackendRequest($requestStack->getCurrentRequest())) {
     $GLOBALS['TL_DCA']['tl_content']['config']['ptable'] = 'tl_point_of_interest';
     $this->loadLanguageFile('tl_module');
 }
