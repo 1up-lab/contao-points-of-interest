@@ -41,16 +41,16 @@
                 <target>Wählen Sie das gewünschte Bild.</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeCss.0">
-                <source>CSS einbinden</source>
+                <target>CSS einbinden</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeCss.1">
-                <source>Wenn ausgwählt, wird das mitgelieferte Stylesheet eingebunden.</source>
+                <target>Wenn ausgwählt, wird das mitgelieferte Stylesheet eingebunden.</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeJs.0">
-                <source>JS einbinden</source>
+                <target>JS einbinden</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeJs.1">
-                <source>Wenn ausgwählt, wird das mitgelieferte Javascript eingebunden.</source>
+                <target>Wenn ausgwählt, wird das mitgelieferte Javascript eingebunden.</target>
             </trans-unit>
         </body>
     </file>

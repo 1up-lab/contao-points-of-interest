@@ -4,69 +4,69 @@
         <body>
             <!-- Controls -->
             <trans-unit id="tl_point_of_interest.new.0">
-                <source>New entry</source>
+                <target>New entry</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.edit.1">
-                <source>Edit content</source>
+                <target>Edit content</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.editheader.1">
-                <source>Edit entry</source>
+                <target>Edit entry</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.copy.1">
-                <source>Copy entry</source>
+                <target>Copy entry</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.cut.1">
-                <source>Move entry</source>
+                <target>Move entry</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.delete.1">
-                <source>Delete entry</source>
+                <target>Delete entry</target>
             </trans-unit>
             >
             <trans-unit id="tl_point_of_interest.show.1">
-                <source>Show details</source>
+                <target>Show details</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.toggle.1">
-                <source>Toggle visibility</source>
+                <target>Toggle visibility</target>
             </trans-unit>
 
             <!-- Legends -->
             <trans-unit id="tl_point_of_interest.title_legend">
-                <source>Title</source>
+                <target>Title</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.configuration_legend">
-                <source>Configuration</source>
+                <target>Configuration</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.publish_legend">
-                <source>Visibility</source>
+                <target>Visibility</target>
             </trans-unit>
 
             <!-- Fields -->
             <trans-unit id="tl_point_of_interest.title.0">
-                <source>Title</source>
+                <target>Title</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.title.1">
-                <source>Provide a title for this entry.</source>
+                <target>Provide a title for this entry.</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.position.0">
-                <source>Position</source>
+                <target>Position</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.position.1">
-                <source>Choose the position of the point directly on the image.</source>
+                <target>Choose the position of the point directly on the image.</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.published.0">
-                <source>Published</source>
+                <target>Published</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.start.0">
-                <source>Start</source>
+                <target>Start</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.start.1">
-                <source>Visible from...</source>
+                <target>Visible from...</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.stop.0">
-                <source>Stop</source>
+                <target>Stop</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.stop.1">
-                <source>Visible until...</source>
+                <target>Visible until...</target>
             </trans-unit>
         </body>
     </file>

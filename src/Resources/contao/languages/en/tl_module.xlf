@@ -3,10 +3,10 @@
     <file>
         <body>
             <trans-unit id="tl_module.poi_id.0">
-                <source>POI</source>
+                <target>POI</target>
             </trans-unit>
             <trans-unit id="tl_module.poi_id.1">
-                <source>Select desired point of interest.</source>
+                <target>Select desired point of interest.</target>
             </trans-unit>
         </body>
     </file>

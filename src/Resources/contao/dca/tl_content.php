@@ -24,7 +24,6 @@ $GLOBALS['TL_DCA']['tl_content']['palettes']['points_of_interest'] = '
 ';
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['poi_id'] = [
-    'label' => &$GLOBALS['TL_LANG']['tl_content']['poi_id'],
     'exclude' => true,
     'inputType' => 'select',
     'options_callback' => [

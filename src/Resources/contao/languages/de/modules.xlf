@@ -3,10 +3,10 @@
     <file>
         <body>
             <trans-unit id="CTE.points_of_interest.0">
-                <source>Points of interest (POI)</source>
+                <target>Points of interest (POI)</target>
             </trans-unit>
             <trans-unit id="CTE.points_of_interest.1">
-                <source>Erzeugt ein Bild mit klickbaren Info-Punkten (POI).</source>
+                <target>Erzeugt ein Bild mit klickbaren Info-Punkten (POI).</target>
             </trans-unit>
             <trans-unit id="MOD.points_of_interest.0">
                 <target>Points of Interest</target>

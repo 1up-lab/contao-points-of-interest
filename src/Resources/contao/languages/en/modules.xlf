@@ -3,22 +3,22 @@
     <file>
         <body>
             <trans-unit id="CTE.points_of_interest.0">
-                <source>Points of interest (POI)</source>
+                <target>Points of interest (POI)</target>
             </trans-unit>
             <trans-unit id="CTE.points_of_interest.1">
-                <source>Displays an image with clickable points of interest (POI).</source>
+                <target>Displays an image with clickable points of interest (POI).</target>
             </trans-unit>
             <trans-unit id="FMD.points_of_interest.0">
-                <source>Points of interest (POI)</source>
+                <target>Points of interest (POI)</target>
             </trans-unit>
             <trans-unit id="FMD.points_of_interest.1">
-                <source>Displays an image with clickable points of interest (POI).</source>
+                <target>Displays an image with clickable points of interest (POI).</target>
             </trans-unit>
             <trans-unit id="MOD.points_of_interest.0">
-                <source>Points of Interest</source>
+                <target>Points of Interest</target>
             </trans-unit>
             <trans-unit id="MOD.points_of_interest.1">
-                <source>Manage images with clickable points of interest.</source>
+                <target>Manage images with clickable points of interest.</target>
             </trans-unit>
         </body>
     </file>

@@ -4,53 +4,53 @@
         <body>
             <!-- Controls -->
             <trans-unit id="tl_points_of_interest.new.0">
-                <source>New entry</source>
+                <target>New entry</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.edit.1">
-                <source>Edit Points of Interest</source>
+                <target>Edit Points of Interest</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.editheader.1">
-                <source>Edit entry</source>
+                <target>Edit entry</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.copy.1">
-                <source>Copy entry</source>
+                <target>Copy entry</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.delete.1">
-                <source>Delete entry</source>
+                <target>Delete entry</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.show.1">
-                <source>Show details</source>
+                <target>Show details</target>
             </trans-unit>
 
             <!-- Legends -->
             <trans-unit id="tl_points_of_interest.pois_legend">
-                <source>Image settings</source>
+                <target>Image settings</target>
             </trans-unit>
 
             <!-- Fields -->
             <trans-unit id="tl_points_of_interest.title.0">
-                <source>Title</source>
+                <target>Title</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.title.1">
-                <source>Title of this POI configuration (only visible in the backend).</source>
+                <target>Title of this POI configuration (only visible in the backend).</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.singleSRC.0">
-                <source>Image source</source>
+                <target>Image target</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.singleSRC.1">
-                <source>Choose your image here.</source>
+                <target>Choose your image here.</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeCss.0">
-                <source>Include CSS</source>
+                <target>Include CSS</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeCss.1">
-                <source>If checked, the built-in Stylesheet will be included.</source>
+                <target>If checked, the built-in Stylesheet will be included.</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeJs.0">
-                <source>Include JS</source>
+                <target>Include JS</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeJs.1">
-                <source>If checked, the built-in Javascript will be included.</source>
+                <target>If checked, the built-in Javascript will be included.</target>
             </trans-unit>
         </body>
     </file>

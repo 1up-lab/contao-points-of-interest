@@ -80,7 +80,6 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
             'sql' => "int(10) unsigned NOT NULL default '0'",
         ],
         'title' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_points_of_interest']['title'],
             'exclude' => true,
             'inputType' => 'text',
             'eval' => [
@@ -90,7 +89,6 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
             'sql' => "varchar(255) NOT NULL default ''",
         ],
         'singleSRC' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_points_of_interest']['singleSRC'],
             'exclude' => true,
             'inputType' => 'fileTree',
             'eval' => [
@@ -106,7 +104,6 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
             ],
         ],
         'includeCss' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_points_of_interest']['includeCss'],
             'exclude' => true,
             'filter' => true,
             'default' => '1',
@@ -119,7 +116,6 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
             'sql' => "char(1) NOT NULL default '1'",
         ],
         'includeJs' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_points_of_interest']['includeJs'],
             'exclude' => true,
             'filter' => true,
             'default' => '1',

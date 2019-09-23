@@ -103,7 +103,6 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'sql' => "int(10) unsigned NOT NULL default '0'",
         ],
         'title' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['title'],
             'exclude' => true,
             'search' => true,
             'flag' => 1,
@@ -112,7 +111,6 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'sql' => "varchar(255) NOT NULL default ''",
         ],
         'position' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['position'],
             'inputType' => 'text',
             'eval' => [
                 'tl_class' => 'clr',
@@ -123,7 +121,6 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'sql' => "varchar(64) NOT NULL default '0'",
         ],
         'cssID' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['cssID'],
             'exclude' => true,
             'inputType' => 'text',
             'eval' => [
@@ -134,7 +131,6 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'sql' => "varchar(255) NOT NULL default ''",
         ],
         'published' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['published'],
             'exclude' => true,
             'filter' => true,
             'flag' => 1,
@@ -143,14 +139,12 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'sql' => "char(1) NOT NULL default ''",
         ],
         'start' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['start'],
             'exclude' => true,
             'inputType' => 'text',
             'eval' => ['rgxp' => 'datim', 'datepicker' => true, 'tl_class' => 'w50 wizard'],
             'sql' => "varchar(10) NOT NULL default ''",
         ],
         'stop' => [
-            'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['stop'],
             'exclude' => true,
             'inputType' => 'text',
             'eval' => ['rgxp' => 'datim', 'datepicker' => true, 'tl_class' => 'w50 wizard'],
