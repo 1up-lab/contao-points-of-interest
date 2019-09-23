@@ -9,8 +9,8 @@ use Contao\ContentModel;
 use Contao\FilesModel;
 use Contao\Hybrid;
 use Contao\Image;
-use Oneup\Contao\Poi\Model\PointOfInterestModel;
-use Oneup\Contao\Poi\Model\PointsOfInterestModel;
+use Oneup\Contao\ContaoPointsOfInterestBundle\Model\PointOfInterestModel;
+use Oneup\Contao\ContaoPointsOfInterestBundle\Model\PointsOfInterestModel;
 
 class Poi extends Hybrid
 {

@@ -15,7 +15,7 @@ use Contao\Input;
 use Contao\Message;
 use Contao\StringUtil;
 use Contao\Versions;
-use Oneup\Contao\Poi\Model\PointsOfInterestModel;
+use Oneup\Contao\ContaoPointsOfInterestBundle\Model\PointsOfInterestModel;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 
