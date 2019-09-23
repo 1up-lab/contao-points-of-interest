@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file>
+        <body>
+            <!-- Controls -->
+            <trans-unit id="tl_points_of_interest.new.0">
+                <source>New entry</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.edit.1">
+                <source>Edit Points of Interest</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.editheader.1">
+                <source>Edit entry</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.copy.1">
+                <source>Copy entry</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.delete.1">
+                <source>Delete entry</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.show.1">
+                <source>Show details</source>
+            </trans-unit>
+
+            <!-- Legends -->
+            <trans-unit id="tl_points_of_interest.pois_legend">
+                <source>Image settings</source>
+            </trans-unit>
+
+            <!-- Fields -->
+            <trans-unit id="tl_points_of_interest.title.0">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.title.1">
+                <source>Title of this POI configuration (only visible in the backend).</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.singleSRC.0">
+                <source>Image source</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.singleSRC.1">
+                <source>Choose your image here.</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeCss.0">
+                <source>Include CSS</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeCss.1">
+                <source>If checked, the built-in Stylesheet will be included.</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeJs.0">
+                <source>Include JS</source>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.includeJs.1">
+                <source>If checked, the built-in Javascript will be included.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

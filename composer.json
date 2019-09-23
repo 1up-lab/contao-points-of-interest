@@ -17,29 +17,27 @@
   "support":{
     "email":"hello@1up.io",
     "issues":"https://github.com/1up-lab/contao-points-of-interest/issues",
-    "irc":"irc://irc.freenode.org/contao.dev",
     "source":"https://github.com/1up-lab/contao-points-of-interest"
   },
   "require":{
-    "php":">=5.4",
-    "contao/core":">=3.2,<4.0-dev",
-    "contao-community-alliance/composer-plugin": "~2.0"
+    "php":"^7.2",
+    "contao/core-bundle": "^4.8"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0",
+    "contao/phpstan": "^0.7.0",
+    "friendsofphp/php-cs-fixer": "^2.13",
+    "php-http/guzzle6-adapter": "^1.1"
   },
   "autoload": {
     "psr-4": {
-      "Oneup\\Contao\\": "src"
+      "Oneup\\Contao\\ContaoPointsOfInterestBundle\\": "src"
     }
+  },
+  "config": {
+    "sort-packages": true
   },
   "extra": {
-    "contao": {
-      "sources": {
-        "contao": "system/modules/points-of-interest"
-      }
-    },
-    "branch-alias": {
-      "dev-master": "1.0.x-dev"
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "contao-manager-plugin": "Oneup\\Bundle\\ContaoPointsOfInterestBundle\\ContaoManager\\Plugin"
+  }
 }

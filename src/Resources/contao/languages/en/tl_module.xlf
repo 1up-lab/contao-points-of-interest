@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file>
+        <body>
+            <trans-unit id="tl_module.poi_id.0">
+                <source>POI</source>
+            </trans-unit>
+            <trans-unit id="tl_module.poi_id.1">
+                <source>Select desired point of interest.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
