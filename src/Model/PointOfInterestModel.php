@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Oneup\Contao\Poi\Model;
+namespace Oneup\Contao\ContaoPointsOfInterestBundle\Model;
 
 use Contao\Model;
 
