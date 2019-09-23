@@ -1,12 +1,15 @@
 services:
     Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper:
+        public: true
         arguments:
             - '@security.token_storage'
 
     Oneup\Contao\ContaoPointsOfInterestBundle\Controller\ContentElement\Poi:
+        public: true
         tags:
             - { name: contao.content_element, category: includes }
 
     Oneup\Contao\ContaoPointsOfInterestBundle\Controller\FrontendModule\Poi:
+        public: true
         tags:
             - { name: contao.frontend_module, category: miscellaneous }
