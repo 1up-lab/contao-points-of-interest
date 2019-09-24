@@ -70,14 +70,13 @@ class ResponseRenderer
                         }
 
                         $row->classes = $css;
-                        $elements[] = Frontend::getContentElement($row, $this->strColumn);
+                        $elements[] = Frontend::getContentElement($row, $model->strColumn);
                         ++$count;
                     }
                 }
             }
 
             $tempPoi['content'] = $elements;
-
             $pointsOfInterest[] = $tempPoi;
         }
 
