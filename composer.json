@@ -1,45 +1,48 @@
-
 {
-  "name":"oneup/contao-points-of-interest",
-  "description":"Use this Contao module to highlight the points of interest of your products. Just a click to open a brief description of each point, allowing your user to get a deep and fast understanding of your product features.",
-  "keywords":["contao", "points of interest", "POI", "jquery"],
-  "type":"contao-module",
-  "homepage":"http://1up.io",
-  "license":"MIT",
-  "authors":[
+  "name": "oneup/contao-points-of-interest",
+  "type": "contao-module",
+  "description": "Use this Contao module to highlight the points of interest of your products. Just a click to open a brief description of each point, allowing your user to get a deep and fast understanding of your product features.",
+  "keywords": [
+    "contao",
+    "points of interest",
+    "POI",
+    "jquery"
+  ],
+  "homepage": "http://1up.io",
+  "license": "MIT",
+  "authors": [
     {
-      "name":"David Greminger",
-      "email":"dg@1up.io",
-      "homepage":"http://1up.io",
-      "role":"Developer"
+      "name": "David Greminger",
+      "email": "dg@1up.io",
+      "homepage": "http://1up.io",
+      "role": "Developer"
     }
   ],
-  "support":{
-    "email":"hello@1up.io",
-    "issues":"https://github.com/1up-lab/contao-points-of-interest/issues",
-    "irc":"irc://irc.freenode.org/contao.dev",
-    "source":"https://github.com/1up-lab/contao-points-of-interest"
+  "require": {
+    "ext-json": "*",
+    "php": "^7.2",
+    "contao/core-bundle": "^4.8"
   },
-  "require":{
-    "php":">=5.4",
-    "contao/core":">=3.2,<4.0-dev",
-    "contao-community-alliance/composer-plugin": "~2.0"
+  "require-dev": {
+    "contao/manager-plugin": "^2.0",
+    "contao/phpstan": "^0.7.0",
+    "friendsofphp/php-cs-fixer": "^2.13",
+    "php-http/guzzle6-adapter": "^1.1"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "contao-manager-plugin": "Oneup\\Bundle\\ContaoPointsOfInterestBundle\\ContaoManager\\Plugin"
   },
   "autoload": {
     "psr-4": {
-      "Oneup\\Contao\\": "src"
+      "Oneup\\Contao\\ContaoPointsOfInterestBundle\\": "src"
     }
   },
-  "extra": {
-    "contao": {
-      "sources": {
-        "contao": "system/modules/points-of-interest"
-      }
-    },
-    "branch-alias": {
-      "dev-master": "1.0.x-dev"
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "support": {
+    "email": "hello@1up.io",
+    "issues": "https://github.com/1up-lab/contao-points-of-interest/issues",
+    "source": "https://github.com/1up-lab/contao-points-of-interest"
+  }
 }

@@ -1,0 +1,19 @@
+<div class="poi-container row">
+    <div class="poi-wrapper">
+        <?php if ($this->pointsOfInterest['image']): ?>
+            <img src="<?= $this->pointsOfInterest['image']->getOriginalPath() ?>" />
+            <ul>
+                <?php foreach($this->pointOfInterest as $poi): ?>
+                    <li class="single-point" style="top: <?= $poi['position']['pY'] ?>%; left: <?= $poi['position']['pX'] ?>%;">
+                        <a class="img-replace poi" href="<?= $poi['url'] ?>" <?php if (false === (bool) $poi['addLink']): ?>data-reveal-id="reveal-<?= $poi['id']; ?>"<?php endif; ?>>More</a>
+                        <?php if (false === (bool) $poi['addLink']): ?>
+                            <div id="reveal-<?= $poi['id'] ?>" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                                <?= implode('', $poi['content']) ?>
+                            </div>
+                        <?php endif; ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+    </div>
+</div>

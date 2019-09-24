@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file>
+        <body>
+            <trans-unit id="CTE.points_of_interest.0">
+                <target>Points of interest (POI)</target>
+            </trans-unit>
+            <trans-unit id="CTE.points_of_interest.1">
+                <target>Erzeugt ein Bild mit klickbaren Info-Punkten (POI).</target>
+            </trans-unit>
+            <trans-unit id="MOD.points_of_interest.0">
+                <target>Points of Interest</target>
+            </trans-unit>
+            <trans-unit id="MOD.points_of_interest.1">
+                <target>Verwalten Sie hier Bilder mit klickbaren Info-Punkten darauf.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
