@@ -28,11 +28,3 @@ $GLOBALS['BE_MOD']['content']['points_of_interest'] = [
 
 $GLOBALS['TL_MODELS']['tl_points_of_interest'] = Oneup\Contao\ContaoPointsOfInterestBundle\Model\PointsOfInterestModel::class;
 $GLOBALS['TL_MODELS']['tl_point_of_interest'] = Oneup\Contao\ContaoPointsOfInterestBundle\Model\PointOfInterestModel::class;
-
-$GLOBALS['TL_CTE']['includes']['points_of_interest'] = 'Oneup\Contao\Poi\Content\Poi';
-
-array_insert($GLOBALS['FE_MOD'], 2, [
-    'miscellaneous' => [
-        'points_of_interest' => 'Oneup\Contao\Poi\Module\Poi',
-    ],
-]);

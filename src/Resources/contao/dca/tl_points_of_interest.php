@@ -100,7 +100,7 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
             ],
             'sql' => 'binary(16) NULL',
             'save_callback' => [
-                [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'storeFileMetaInformation'],
+                ['oneup_contao_points_of_interest.dca_helper', 'storeFileMetaInformation'],
             ],
         ],
         'includeCss' => [

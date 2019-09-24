@@ -23,7 +23,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'fields' => ['sorting'],
             'headerFields' => ['title'],
             'panelLayout' => 'limit',
-            'child_record_callback' => [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'listPois'],
+            'child_record_callback' => ['oneup_contao_points_of_interest.dca_helper', 'listPois'],
             'child_record_class' => 'no_padding',
         ],
         'global_operations' => [
@@ -40,7 +40,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
                 'href' => 'table=tl_content',
                 'icon' => 'edit.gif',
                 'attributes' => 'class="contextmenu"',
-                'button_callback' => [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'editPoiIcon'],
+                'button_callback' => ['oneup_contao_points_of_interest.dca_helper', 'editPoiIcon'],
             ],
             'editheader' => [
                 'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['editheader'],
@@ -68,7 +68,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
                 'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['toggle'],
                 'icon' => 'visible.gif',
                 'attributes' => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
-                'button_callback' => [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'togglePoiIcon'],
+                'button_callback' => ['oneup_contao_points_of_interest.dca_helper', 'togglePoiIcon'],
             ],
             'show' => [
                 'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['show'],
@@ -122,7 +122,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
                 'tl_class' => 'clr',
             ],
             'wizard' => [
-                [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'showPositionPicker'],
+                ['oneup_contao_points_of_interest.dca_helper', 'showPositionPicker'],
             ],
             'sql' => "varchar(64) NOT NULL default '0'",
         ],

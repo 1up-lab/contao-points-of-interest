@@ -19,6 +19,7 @@
     }
   ],
   "require": {
+    "ext-json": "*",
     "php": "^7.2",
     "contao/core-bundle": "^4.8"
   },
