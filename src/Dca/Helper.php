@@ -158,11 +158,15 @@ class Helper extends Backend
 
     public function toggleSlideIcon($row, $href, $label, $title, $icon, $attributes): string
     {
-        if ('' !== Input::get('tid')) {
-            $this->toggleVisibility(Input::get('tid'), (1 === Input::get('state')));
+        $tid = Input::get('tid');
+
+        if (null !== $tid && '' !== $tid) {
+            $this->toggleVisibility(Input::get('tid'), (1 === (int) Input::get('state')));
+
             if (Environment::get('isAjaxRequest')) {
                 exit;
             }
+
             self::redirect(self::getReferer());
         }
 
@@ -172,7 +176,7 @@ class Helper extends Backend
             $icon = 'invisible.gif';
         }
 
-        return '<a href="' . self::addToUrl($href) . '" title="' . StringUtil::specialchars($title) . '"' . $attributes . '>' . Image::getHtml($icon, $label) . '</a> ';
+        return '<a href="' . self::addToUrl($href) . '" title="' . StringUtil::specialchars($title) . '"' . $attributes . '>' . Image::getHtml($icon, $label, 'data-state="' . ($row['published'] ? 1 : 0) . '"') . '</a> ';
     }
 
     public function toggleVisibility($intId, $blnVisible): void
