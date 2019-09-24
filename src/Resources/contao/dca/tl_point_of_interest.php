@@ -40,7 +40,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
                 'href' => 'table=tl_content',
                 'icon' => 'edit.gif',
                 'attributes' => 'class="contextmenu"',
-                'button_callback' => [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'editSlideIcon'],
+                'button_callback' => [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'editPoiIcon'],
             ],
             'editheader' => [
                 'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['editheader'],
@@ -68,7 +68,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
                 'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['toggle'],
                 'icon' => 'visible.gif',
                 'attributes' => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
-                'button_callback' => [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'toggleSlideIcon'],
+                'button_callback' => [Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper::class, 'togglePoiIcon'],
             ],
             'show' => [
                 'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['show'],
@@ -79,12 +79,18 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
     ],
 
     'palettes' => [
+        '__selector__' => ['addLink'],
         'default' => '
             {title_legend},title;
             {configuration_legend},position;
+            {link_legend},addLink;
             {expert_legend},cssId,cssClass;
             {publish_legend},published,start,stop;
         ',
+    ],
+
+    'subpalettes' => [
+        'addLink' => 'url',
     ],
 
     'fields' => [
@@ -149,6 +155,19 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'inputType' => 'text',
             'eval' => ['rgxp' => 'datim', 'datepicker' => true, 'tl_class' => 'w50 wizard'],
             'sql' => "varchar(10) NOT NULL default ''",
+        ],
+        'addLink' => [
+            'exclude' => true,
+            'inputType' => 'checkbox',
+            'eval' => ['submitOnChange' => true],
+            'sql' => "char(1) NOT NULL default ''",
+        ],
+        'url' => [
+            'exclude' => true,
+            'search' => true,
+            'inputType' => 'text',
+            'eval' => ['mandatory' => true, 'rgxp' => 'url', 'decodeEntities' => true, 'maxlength' => 255, 'dcaPicker' => true, 'addWizardClass' => false, 'tl_class' => 'w50'],
+            'sql' => "varchar(255) NOT NULL default ''",
         ],
     ],
 ];

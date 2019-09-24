@@ -38,6 +38,9 @@
             <trans-unit id="tl_point_of_interest.publish_legend">
                 <target>Sichtbarkeit</target>
             </trans-unit>
+            <trans-unit id="tl_point_of_interest.link_legend">
+                <target>Link-Einstellungen</target>
+            </trans-unit>
 
             <!-- Fields -->
             <trans-unit id="tl_point_of_interest.title.0">
@@ -56,16 +59,28 @@
                 <target>Veröffentlicht</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.start.0">
-                <target>Start</target>
+                <target>Anzeigen ab</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.start.1">
-                <target>Sichtbar von...</target>
+                <target>Das Element erst ab diesem Tag auf der Webseite anzeigen.</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.stop.0">
-                <target>Stop</target>
+                <target>Anzeigen bis</target>
             </trans-unit>
             <trans-unit id="tl_point_of_interest.stop.1">
-                <target>Sichtbar bis...</target>
+                <target>Das Element nur bis zu diesem Tag auf der Webseite anzeigen.</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.addLink.0">
+                <target>Link hinzufügen</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.addLink.1">
+                <target>Den POI verlinken (anstatt Overlay mit Content).</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.url.0">
+                <target>Link-Adresse</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.url.1">
+                <target>Geben Sie eine Web-Adresse (http://…), eine E-Mail-Adresse (mailto:…) oder ein Inserttag ein.</target>
             </trans-unit>
         </body>
     </file>

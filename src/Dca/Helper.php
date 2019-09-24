@@ -149,14 +149,18 @@ class Helper extends Backend
         return $imgHtml . $script;
     }
 
-    public function editSlideIcon($row, $href, $label, $title, $icon, $attributes): string
+    public function editPoiIcon($row, $href, $label, $title, $icon, $attributes): string
     {
+        if (true === (bool) $row['addLink']) {
+            return '';
+        }
+
         $href .= '&amp;id=' . $row['id'];
 
         return '<a href="' . self::addToUrl($href) . '" title="' . StringUtil::specialchars($title) . '"' . $attributes . '>' . Image::getHtml($icon, $label) . '</a> ';
     }
 
-    public function toggleSlideIcon($row, $href, $label, $title, $icon, $attributes): string
+    public function togglePoiIcon($row, $href, $label, $title, $icon, $attributes): string
     {
         $tid = Input::get('tid');
 
