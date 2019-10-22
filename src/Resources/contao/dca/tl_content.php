@@ -20,7 +20,7 @@ if ($request instanceof \Symfony\Component\HttpFoundation\Request && 'points_of_
 $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = ['oneup_contao_points_of_interest.dca_helper', 'showJsLibraryHint'];
 
 $GLOBALS['TL_DCA']['tl_content']['palettes']['points_of_interest'] = '
-    {title_legend},name,headline,type,poi_id;
+    {type_legend},type,headline;{poi_legend},poi_id;
 ';
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['poi_id'] = [
