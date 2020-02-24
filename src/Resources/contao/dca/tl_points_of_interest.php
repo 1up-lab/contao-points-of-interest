@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-Contao\System::loadLanguageFile('default');
-
 $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
     'config' => [
         'dataContainer' => 'Table',
