@@ -80,6 +80,16 @@ class ResponseRenderer
             $pointsOfInterest[] = $tempPoi;
         }
 
+        // Sort top -> down (avoids z-index problems)
+        usort($pointsOfInterest, static function ($a, $b) {
+            return $a['position']['pY'] <=> $b['position']['pY'];
+        });
+
+        // Sort left -> right (avoids z-index problems)
+        usort($pointsOfInterest, static function ($a, $b) {
+            return $a['position']['pX'] <=> $b['position']['pX'];
+        });
+
         $template->pointOfInterest = $pointsOfInterest;
 
         if ((int) $poi->includeCss) {
