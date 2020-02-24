@@ -1,7 +1,7 @@
 <div class="poi-container row">
     <div class="poi-wrapper">
-        <?php if ($this->pointsOfInterest['image']): ?>
-            <img src="<?= $this->pointsOfInterest['image']->getOriginalPath() ?>" />
+        <?php if ($this->src): ?>
+            <img src="<?= $this->src ?>" />
             <ul>
                 <?php foreach($this->pointOfInterest as $poi): ?>
                     <li class="single-point" style="top: <?= $poi['position']['pY'] ?>%; left: <?= $poi['position']['pX'] ?>%;">

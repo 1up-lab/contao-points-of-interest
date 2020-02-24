@@ -40,6 +40,12 @@
             <trans-unit id="tl_points_of_interest.singleSRC.1">
                 <target>Wählen Sie das gewünschte Bild.</target>
             </trans-unit>
+            <trans-unit id="tl_points_of_interest.size.0">
+                <target>Bildgrösse</target>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.size.1">
+                <target>Hier können Sie die Abmessungen des Bildes und den Skalierungsmodus festlegen.</target>
+            </trans-unit>
             <trans-unit id="tl_points_of_interest.includeCss.0">
                 <target>CSS einbinden</target>
             </trans-unit>

@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace Oneup\Contao\ContaoPointsOfInterestBundle\PointsOfInterest;
 
 use Contao\ContentModel;
+use Contao\Controller;
 use Contao\FilesModel;
 use Contao\Frontend;
-use Contao\Image;
 use Contao\Model;
+use Contao\StringUtil;
 use Contao\Template;
 use Oneup\Contao\ContaoPointsOfInterestBundle\Model\PointOfInterestModel;
 use Oneup\Contao\ContaoPointsOfInterestBundle\Model\PointsOfInterestModel;
@@ -29,15 +30,16 @@ class ResponseRenderer
 
         $fileModel = FilesModel::findByUuid($poi->singleSRC);
 
+        $poi->size = StringUtil::deserialize($poi->size);
+        $poi->singleSRC = $fileModel->path;
         $file = new \File($fileModel->path);
-        $img = new Image($file);
 
         $imgSize = $file->imageSize;
-        // TODO: implement image size
 
-        $poi->image = $img;
         $template->pointsOfInterest = $poi->row();
         $pointsOfInterest = [];
+
+        Controller::addImageToTemplate($template, $poi->row());
 
         while (null !== $pois && $pois->next()) {
             $tempPoi = $pois->row();

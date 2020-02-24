@@ -40,6 +40,12 @@
             <trans-unit id="tl_points_of_interest.singleSRC.1">
                 <target>Choose your image here.</target>
             </trans-unit>
+            <trans-unit id="tl_points_of_interest.size.0">
+                <target>Image size</target>
+            </trans-unit>
+            <trans-unit id="tl_points_of_interest.size.1">
+                <target>Here you can set the image dimensions and the resize mode.</target>
+            </trans-unit>
             <trans-unit id="tl_points_of_interest.includeCss.0">
                 <target>Include CSS</target>
             </trans-unit>

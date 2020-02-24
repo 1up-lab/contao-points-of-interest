@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+Contao\System::loadLanguageFile('default');
+
 $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
     'config' => [
         'dataContainer' => 'Table',
@@ -68,7 +70,7 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
 
     'palettes' => [
         'default' => '
-            {pois_legend},title,singleSRC,includeCss,includeJs;
+            {pois_legend},title,singleSRC,size,includeCss,includeJs;
         ',
     ],
 
@@ -102,6 +104,20 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
             'save_callback' => [
                 ['oneup_contao_points_of_interest.dca_helper', 'storeFileMetaInformation'],
             ],
+        ],
+        'size' => [
+            'exclude' => true,
+            'inputType' => 'imageSize',
+            'reference' => &$GLOBALS['TL_LANG']['MSC'],
+            'eval' => [
+                'rgxp' => 'natural',
+                'includeBlankOption' => true,
+                'nospace' => true,
+                'helpwizard' => true,
+                'tl_class' => 'w50',
+            ],
+            'options_callback' => ['oneup_contao_points_of_interest.image_size_provider', 'getImageSizes'],
+            'sql' => "varchar(255) NOT NULL default ''",
         ],
         'includeCss' => [
             'exclude' => true,
