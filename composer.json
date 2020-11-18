@@ -33,7 +33,7 @@
     "sort-packages": true
   },
   "extra": {
-    "contao-manager-plugin": "Oneup\\Bundle\\ContaoPointsOfInterestBundle\\ContaoManager\\Plugin"
+    "contao-manager-plugin": "Oneup\\Contao\\ContaoPointsOfInterestBundle\\ContaoManager\\Plugin"
   },
   "autoload": {
     "psr-4": {
