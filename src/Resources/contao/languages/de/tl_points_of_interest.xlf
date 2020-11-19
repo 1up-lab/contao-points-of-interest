@@ -50,13 +50,13 @@
                 <target>CSS einbinden</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeCss.1">
-                <target>Wenn ausgwählt, wird das mitgelieferte Stylesheet eingebunden.</target>
+                <target>Wenn ausgewählt, wird das mitgelieferte Stylesheet eingebunden.</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeJs.0">
                 <target>JS einbinden</target>
             </trans-unit>
             <trans-unit id="tl_points_of_interest.includeJs.1">
-                <target>Wenn ausgwählt, wird das mitgelieferte Javascript eingebunden.</target>
+                <target>Wenn ausgewählt, wird das mitgelieferte Javascript eingebunden.</target>
             </trans-unit>
         </body>
     </file>
