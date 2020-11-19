@@ -95,11 +95,11 @@ class ResponseRenderer
         $template->pointOfInterest = $pointsOfInterest;
 
         if ((int) $poi->includeCss) {
-            $GLOBALS['TL_CSS'][] = 'system/modules/points-of-interest/assets/css/poi.css||static';
+            $GLOBALS['TL_CSS'][] = 'bundles/oneupcontaopointsofinterest/css/poi.css||static';
         }
 
         if ((int) $poi->includeJs) {
-            $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/points-of-interest/assets/js/poi.js';
+            $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/oneupcontaopointsofinterest/js/poi.js';
         }
 
         return $template->getResponse();
