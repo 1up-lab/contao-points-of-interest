@@ -82,6 +82,12 @@
             <trans-unit id="tl_point_of_interest.url.1">
                 <target>Geben Sie eine Web-Adresse (http://…), eine E-Mail-Adresse (mailto:…) oder ein Inserttag ein.</target>
             </trans-unit>
+            <trans-unit id="tl_point_of_interest.tstamp.0">
+                <target>Änderungsdatum</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.tstamp.1">
+                <target>Datum und Uhrzeit der letzten Änderung</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

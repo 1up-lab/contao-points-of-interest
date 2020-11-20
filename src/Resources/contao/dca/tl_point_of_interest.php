@@ -36,42 +36,35 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
         ],
         'operations' => [
             'edit' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['edit'],
                 'href' => 'table=tl_content',
                 'icon' => 'edit.gif',
                 'attributes' => 'class="contextmenu"',
                 'button_callback' => ['oneup_contao_points_of_interest.dca_helper', 'editPoiIcon'],
             ],
             'editheader' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['editheader'],
                 'href' => 'act=edit',
                 'icon' => 'header.gif',
                 'attributes' => 'class="edit-header"',
             ],
             'copy' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['copy'],
                 'href' => 'act=paste&amp;mode=copy',
                 'icon' => 'copy.gif',
             ],
             'cut' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['cut'],
                 'href' => 'act=paste&amp;mode=cut',
                 'icon' => 'cut.gif',
             ],
             'delete' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['delete'],
                 'href' => 'act=delete',
                 'icon' => 'delete.gif',
                 'attributes' => 'onclick="if(!confirm(\'' . $GLOBALS['TL_LANG']['MSC']['deleteConfirm'] . '\'))return false;Backend.getScrollOffset()"',
             ],
             'toggle' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['toggle'],
                 'icon' => 'visible.gif',
                 'attributes' => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
                 'button_callback' => ['oneup_contao_points_of_interest.dca_helper', 'togglePoiIcon'],
             ],
             'show' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_point_of_interest']['show'],
                 'href' => 'act=show',
                 'icon' => 'show.gif',
             ],

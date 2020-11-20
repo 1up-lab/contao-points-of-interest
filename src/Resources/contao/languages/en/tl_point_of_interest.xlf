@@ -85,6 +85,12 @@
             <trans-unit id="tl_point_of_interest.url.1">
                 <target>Please enter the URL (http://…) of the Flash movie.</target>
             </trans-unit>
+            <trans-unit id="tl_point_of_interest.tstamp.0">
+                <target>Revision date</target>
+            </trans-unit>
+            <trans-unit id="tl_point_of_interest.tstamp.1">
+                <target>Date and time of the latest revision</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
