@@ -25,7 +25,6 @@
   },
   "require-dev": {
     "contao/manager-plugin": "^2.0",
-    "contao/phpstan": "^0.7.0",
     "friendsofphp/php-cs-fixer": "^2.13",
     "php-http/guzzle6-adapter": "^1.1"
   },
