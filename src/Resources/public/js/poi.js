@@ -1,6 +1,10 @@
 ;(function($){
     $(document).ready(function(){
         $('.single-point a.poi').on('click', function(event) {
+            if (undefined === $(this).data('reveal-id')) {
+                return;
+            }
+
             event.preventDefault();
 
             var selectedPoint = $(this).parent('li');

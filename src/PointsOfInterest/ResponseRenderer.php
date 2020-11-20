@@ -50,7 +50,7 @@ class ResponseRenderer
 
             $elements = [];
 
-            if (true === (bool) $poi->addLink) {
+            if (false === (bool) $poi->addLink) {
                 $content = ContentModel::findPublishedByPidAndTable($tempPoi['id'], 'tl_point_of_interest');
 
                 if (null !== $content) {
