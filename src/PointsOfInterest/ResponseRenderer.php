@@ -30,6 +30,10 @@ class ResponseRenderer
 
         $fileModel = FilesModel::findByUuid($poi->singleSRC);
 
+        if (!$fileModel instanceof FilesModel) {
+            return $template->getResponse();
+        }
+
         $poi->size = StringUtil::deserialize($poi->size);
         $poi->singleSRC = $fileModel->path;
         $file = new \File($fileModel->path);
@@ -43,7 +47,7 @@ class ResponseRenderer
 
         while (null !== $pois && $pois->next()) {
             $tempPoi = $pois->row();
-            $tempPoi['position'] = json_decode($tempPoi['position'], true);
+            $tempPoi['position'] = json_decode(StringUtil::decodeEntities($tempPoi['position']), true);
 
             $tempPoi['position']['pX'] = round(100 / $imgSize[0] * $tempPoi['position']['x'], 3);
             $tempPoi['position']['pY'] = round(100 / $imgSize[1] * $tempPoi['position']['y'], 3);

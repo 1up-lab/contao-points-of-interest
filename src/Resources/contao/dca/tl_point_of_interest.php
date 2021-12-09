@@ -110,14 +110,17 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'sql' => "varchar(255) NOT NULL default ''",
         ],
         'position' => [
-            'inputType' => 'text',
+            'inputType' => 'textarea',
             'eval' => [
                 'tl_class' => 'clr',
+                'allowHtml' => true,
+                'rte' => false,
+                'helpwizard' => false,
             ],
             'wizard' => [
                 ['oneup_contao_points_of_interest.dca_helper', 'showPositionPicker'],
             ],
-            'sql' => "varchar(64) NOT NULL default '0'",
+            'sql' => "mediumtext NULL",
         ],
         'cssID' => [
             'exclude' => true,

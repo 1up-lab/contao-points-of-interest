@@ -8,10 +8,12 @@
     background: #fff;
     box-shadow: 0 1px 3px #ddd;
     position: relative;
+    margin-left: 0;
 }
 
 #tl_point_of_interest div.poi {
     position: relative;
+    padding: 4px 0px;
 }
 
 #tl_point_of_interest span.marker.not-set {
