@@ -120,7 +120,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'wizard' => [
                 ['oneup_contao_points_of_interest.dca_helper', 'showPositionPicker'],
             ],
-            'sql' => "mediumtext NULL",
+            'sql' => 'mediumtext NULL',
         ],
         'cssID' => [
             'exclude' => true,
