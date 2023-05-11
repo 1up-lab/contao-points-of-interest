@@ -26,7 +26,7 @@ class ResponseRenderer
             return $template->getResponse();
         }
 
-        $pois = PointOfInterestModel::findBy('pid', $poi->id);
+        $pois = PointOfInterestModel::findPublishedByPid($poi->id);
 
         $fileModel = FilesModel::findByUuid($poi->singleSRC);
 
