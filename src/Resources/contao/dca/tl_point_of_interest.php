@@ -72,7 +72,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
     ],
 
     'palettes' => [
-        '__selector__' => ['addLink'],
+        '__selector__' => ['addLink', 'addIcon'],
         'default' => '
             {title_legend},title;
             {configuration_legend},position;

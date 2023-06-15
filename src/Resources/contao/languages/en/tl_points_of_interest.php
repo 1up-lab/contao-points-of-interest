@@ -17,5 +17,5 @@ $GLOBALS['TL_LANG']['tl_points_of_interest']['singleSRC'] = ['Image target', 'Ch
 $GLOBALS['TL_LANG']['tl_points_of_interest']['size'] = ['Image size', 'Here you can set the image dimensions and the resize mode.'];
 $GLOBALS['TL_LANG']['tl_points_of_interest']['includeCss'] = ['Include CSS', 'If checked, the built-in Stylesheet will be included.'];
 $GLOBALS['TL_LANG']['tl_points_of_interest']['includeJs'] = ['Include JS', 'If checked, the built-in Javascript will be included.'];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['addIcon'] = ['Add icon', ''];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['icon'] = ['Poi icon', ''];
+$GLOBALS['TL_LANG']['tl_points_of_interest']['addIcon'] = ['Add icon', 'Add an icon to the POI.'];
+$GLOBALS['TL_LANG']['tl_points_of_interest']['icon'] = ['Poi icon', 'Select an icon.'];

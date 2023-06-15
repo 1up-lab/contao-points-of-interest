@@ -62,6 +62,7 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
     ],
 
     'palettes' => [
+        '__selector__' => ['addIcon'],
         'default' => '
             {pois_legend},title,singleSRC,size,includeCss,includeJs;
             {icon_legend},addIcon;

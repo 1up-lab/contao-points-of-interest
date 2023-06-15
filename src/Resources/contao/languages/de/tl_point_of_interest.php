@@ -25,5 +25,5 @@ $GLOBALS['TL_LANG']['tl_point_of_interest']['stop'] = ['Anzeigen bis', 'Das Elem
 $GLOBALS['TL_LANG']['tl_point_of_interest']['addLink'] = ['Link hinzufügen', 'Den POI verlinken (anstatt Overlay mit Content).'];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['url'] = ['Link-Adresse', 'Geben Sie eine Web-Adresse (http://…), eine E-Mail-Adresse (mailto:…) oder ein Inserttag ein.'];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['tstamp'] = ['Änderungsdatum', 'Datum und Uhrzeit der letzten Änderung'];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['addIcon'] = ['Icon hinzufügen', ''];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['icon'] = ['Poi Icon', ''];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['addIcon'] = ['Icon hinzufügen', 'Fügen Sie dem POI ein Icon hinzu.'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['icon'] = ['Poi Icon', 'Wählen Sie ein Icon aus.'];
