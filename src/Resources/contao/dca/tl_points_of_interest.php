@@ -64,7 +64,12 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
     'palettes' => [
         'default' => '
             {pois_legend},title,singleSRC,size,includeCss,includeJs;
+            {icon_legend},addIcon;
         ',
+    ],
+
+    'subpalettes' => [
+        'addIcon' => 'icon',
     ],
 
     'fields' => [
@@ -82,6 +87,24 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
                 'maxlength' => 255,
             ],
             'sql' => "varchar(255) NOT NULL default ''",
+        ],
+        'addIcon' => [
+            'exclude' => true,
+            'inputType' => 'checkbox',
+            'eval' => ['submitOnChange' => true],
+            'sql' => "char(1) NOT NULL default ''",
+        ],
+        'icon' => [
+            'exclude' => true,
+            'inputType' => 'fileTree',
+            'eval' => [
+                'fieldType' => 'radio',
+                'files' => true,
+                'filesOnly' => true,
+                'extensions' => \Config::get('validImageTypes'),
+                'mandatory' => true,
+            ],
+            'sql' => 'binary(16) NULL',
         ],
         'singleSRC' => [
             'exclude' => true,
