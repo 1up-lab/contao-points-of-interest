@@ -180,7 +180,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
                 'fieldType' => 'radio',
                 'files' => true,
                 'filesOnly' => true,
-                'extensions' => \Config::get('validImageTypes'),
+                'extensions' => Contao\Config::get('validImageTypes'),
                 'mandatory' => true,
             ],
             'sql' => 'binary(16) NULL',
