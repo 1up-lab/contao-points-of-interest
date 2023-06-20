@@ -127,10 +127,10 @@ class ResponseRenderer
     {
         $file = FilesModel::findByUuid($icon);
 
-        if (!$file instanceof FilesModel) {
-            return null;
+        if ($file instanceof FilesModel) {
+            return $file->path;
         }
 
-        return $file->path;
+        return null;
     }
 }
