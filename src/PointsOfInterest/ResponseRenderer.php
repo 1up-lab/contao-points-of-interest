@@ -76,9 +76,6 @@ class ResponseRenderer
                 $tempPoi['icon'] = $poiIcon;
             }
 
-            dump($tempPoi['addIcon']);
-            dump($poiIcon);
-
             $elements = [];
 
             if (false === (bool) $poi->addLink) {
