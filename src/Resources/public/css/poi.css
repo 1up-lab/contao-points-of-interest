@@ -28,7 +28,6 @@
     transition: background-color 0.2s;
 }
 
-.single-point > .poi__icon,
 .single-point > .poi__icon {
     width: 30px;
     height: 30px;
