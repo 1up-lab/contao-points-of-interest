@@ -51,7 +51,7 @@ class Poi extends Hybrid
 
         while (null !== $pois && $pois->next()) {
             $tempPoi = $pois->row();
-            $tempPoi['position'] = json_decode($tempPoi['position'], true);
+            $tempPoi['position'] = json_decode(html_entity_decode($tempPoi['position']), true);
 
             $tempPoi['position']['pX'] = round(100 / $imgSize[0] * $tempPoi['position']['x'], 3);
             $tempPoi['position']['pY'] = round(100 / $imgSize[1] * $tempPoi['position']['y'], 3);
