@@ -28,6 +28,20 @@
     transition: background-color 0.2s;
 }
 
+.single-point > .poi__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.single-point > .poi__icon::after,
+.single-point > .poi__icon::before {
+    display: none;
+}
+
 .single-point > a::after, .single-point > a:before {
     /* rotating plus icon */
     content: '';

@@ -72,11 +72,12 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
     ],
 
     'palettes' => [
-        '__selector__' => ['addLink'],
+        '__selector__' => ['addLink', 'addIcon'],
         'default' => '
             {title_legend},title;
             {configuration_legend},position;
             {link_legend},addLink;
+            {icon_legend},addIcon;
             {expert_legend},cssId,cssClass;
             {publish_legend},published,start,stop;
         ',
@@ -84,6 +85,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
 
     'subpalettes' => [
         'addLink' => 'url',
+        'addIcon' => 'icon',
     ],
 
     'fields' => [
@@ -164,6 +166,24 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'inputType' => 'text',
             'eval' => ['mandatory' => true, 'rgxp' => 'url', 'decodeEntities' => true, 'maxlength' => 255, 'dcaPicker' => true, 'addWizardClass' => false, 'tl_class' => 'w50'],
             'sql' => "varchar(255) NOT NULL default ''",
+        ],
+        'addIcon' => [
+            'exclude' => true,
+            'inputType' => 'checkbox',
+            'eval' => ['submitOnChange' => true],
+            'sql' => "char(1) NOT NULL default ''",
+        ],
+        'icon' => [
+            'exclude' => true,
+            'inputType' => 'fileTree',
+            'eval' => [
+                'fieldType' => 'radio',
+                'files' => true,
+                'filesOnly' => true,
+                'extensions' => Contao\Config::get('validImageTypes'),
+                'mandatory' => true,
+            ],
+            'sql' => 'binary(16) NULL',
         ],
     ],
 ];

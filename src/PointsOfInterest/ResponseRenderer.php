@@ -34,6 +34,7 @@ class ResponseRenderer
             return $template->getResponse();
         }
 
+        $poiIcon = $poi->addIcon ? $this->getIconPath($poi->icon) : null;
         $poi->size = StringUtil::deserialize($poi->size);
         $poi->singleSRC = $fileModel->path;
         $file = new \File($fileModel->path);
@@ -51,6 +52,15 @@ class ResponseRenderer
 
             $tempPoi['position']['pX'] = round(100 / $imgSize[0] * $tempPoi['position']['x'], 3);
             $tempPoi['position']['pY'] = round(100 / $imgSize[1] * $tempPoi['position']['y'], 3);
+
+            if ($tempPoi['addIcon'] && $tempPoi['icon']) {
+                $tempPoi['icon'] = $this->getIconPath($tempPoi['icon']);
+            }
+
+            if ($poiIcon && !$tempPoi['addIcon']) {
+                $tempPoi['addIcon'] = true;
+                $tempPoi['icon'] = $poiIcon;
+            }
 
             $elements = [];
 
@@ -107,5 +117,16 @@ class ResponseRenderer
         }
 
         return $template->getResponse();
+    }
+
+    public function getIconPath($icon): ?string
+    {
+        $file = FilesModel::findByUuid($icon);
+
+        if ($file instanceof FilesModel) {
+            return $file->path;
+        }
+
+        return null;
     }
 }
