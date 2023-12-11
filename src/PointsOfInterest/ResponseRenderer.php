@@ -34,11 +34,7 @@ class ResponseRenderer
             return $template->getResponse();
         }
 
-        if ($poi->addIcon) {
-            $iconPath = $this->getIconPath($poi->icon);
-        }
-
-        $poiIcon = $iconPath;
+        $poiIcon = $poi->addIcon ? $this->getIconPath($poi->icon) : null;
         $poi->size = StringUtil::deserialize($poi->size);
         $poi->singleSRC = $fileModel->path;
         $file = new \File($fileModel->path);
