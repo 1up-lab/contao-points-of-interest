@@ -37,36 +37,36 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
         'operations' => [
             'edit' => [
                 'href' => 'table=tl_content',
-                'icon' => 'edit.gif',
+                'icon' => 'edit.svg',
                 'attributes' => 'class="contextmenu"',
                 'button_callback' => ['oneup_contao_points_of_interest.dca_helper', 'editPoiIcon'],
             ],
             'editheader' => [
                 'href' => 'act=edit',
-                'icon' => 'header.gif',
+                'icon' => 'header.svg',
                 'attributes' => 'class="edit-header"',
             ],
             'copy' => [
                 'href' => 'act=paste&amp;mode=copy',
-                'icon' => 'copy.gif',
+                'icon' => 'copy.svg',
             ],
             'cut' => [
                 'href' => 'act=paste&amp;mode=cut',
-                'icon' => 'cut.gif',
+                'icon' => 'cut.svg',
             ],
             'delete' => [
                 'href' => 'act=delete',
-                'icon' => 'delete.gif',
+                'icon' => 'delete.svg',
                 'attributes' => 'onclick="if(!confirm(\'' . ($GLOBALS['TL_LANG']['MSC']['deleteConfirm'] ?? null) . '\'))return false;Backend.getScrollOffset()"',
             ],
             'toggle' => [
-                'icon' => 'visible.gif',
-                'attributes' => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
+                'href' => 'act=toggle&amp;field=published',
+                'icon' => 'visible.svg',
                 'button_callback' => ['oneup_contao_points_of_interest.dca_helper', 'togglePoiIcon'],
             ],
             'show' => [
                 'href' => 'act=show',
-                'icon' => 'show.gif',
+                'icon' => 'show.svg',
             ],
         ],
     ],
@@ -135,6 +135,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'sql' => "varchar(255) NOT NULL default ''",
         ],
         'published' => [
+            'toggle' => true,
             'exclude' => true,
             'filter' => true,
             'flag' => 1,

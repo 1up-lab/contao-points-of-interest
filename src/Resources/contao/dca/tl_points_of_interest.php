@@ -37,26 +37,26 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
         'operations' => [
             'edit' => [
                 'href' => 'table=tl_point_of_interest',
-                'icon' => 'edit.gif',
+                'icon' => 'edit.svg',
                 'attributes' => 'class="contextmenu"',
             ],
             'editheader' => [
                 'href' => 'act=edit',
-                'icon' => 'header.gif',
+                'icon' => 'header.svg',
                 'attributes' => 'class="edit-header"',
             ],
             'copy' => [
                 'href' => 'act=copy',
-                'icon' => 'copy.gif',
+                'icon' => 'copy.svg',
             ],
             'delete' => [
                 'href' => 'act=delete',
-                'icon' => 'delete.gif',
+                'icon' => 'delete.svg',
                 'attributes' => 'onclick="if(!confirm(\'' . ($GLOBALS['TL_LANG']['MSC']['deleteConfirm'] ?? null) . '\'))return false;Backend.getScrollOffset()"',
             ],
             'show' => [
                 'href' => 'act=show',
-                'icon' => 'show.gif',
+                'icon' => 'show.svg',
             ],
         ],
     ],
