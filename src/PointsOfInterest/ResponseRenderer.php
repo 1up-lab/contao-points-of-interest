@@ -86,7 +86,7 @@ class ResponseRenderer
                         }
 
                         $row->classes = $css;
-                        $elements[] = Frontend::getContentElement($row, $model->strColumn);
+                        $elements[] = Frontend::getContentElement($row, $model->strColumn ?? 'main');
                         ++$count;
                     }
                 }
