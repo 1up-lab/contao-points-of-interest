@@ -21,6 +21,10 @@ class PointOfInterestModel extends Model
             $arrColumns[] = "$t.published='1' AND ($t.start='' OR $t.start<='$time') AND ($t.stop='' OR $t.stop>'$time')";
         }
 
+        if (!isset($arrOptions['order'])) {
+            $arrOptions['order'] = "$t.sorting";
+        }
+
         return static::findBy($arrColumns, $intPid, $arrOptions);
     }
 }
