@@ -96,7 +96,7 @@ class ResponseRenderer
             $pointsOfInterest[] = $tempPoi;
         }
 
-        if (false === (bool) $model->useSorting) {
+        if (false === (bool) $model->poi_useSorting) {
             // Sort top -> down (avoids z-index problems)
             usort($pointsOfInterest, static function ($a, $b) {
                 return $a['position']['pY'] <=> $b['position']['pY'];
