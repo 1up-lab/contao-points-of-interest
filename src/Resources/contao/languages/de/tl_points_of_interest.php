@@ -19,3 +19,4 @@ $GLOBALS['TL_LANG']['tl_points_of_interest']['includeCss'] = ['CSS einbinden', '
 $GLOBALS['TL_LANG']['tl_points_of_interest']['includeJs'] = ['JS einbinden', 'Wenn ausgewählt, wird das mitgelieferte Javascript eingebunden.'];
 $GLOBALS['TL_LANG']['tl_points_of_interest']['addIcon'] = ['Icon hinzufügen', 'Fügen Sie dem POI ein Icon hinzu.'];
 $GLOBALS['TL_LANG']['tl_points_of_interest']['icon'] = ['Poi Icon', 'Wählen Sie ein Icon aus.'];
+$GLOBALS['TL_LANG']['tl_points_of_interest']['useSorting'] = ['Punkte sortieren', 'Wenn ausgewählt, werden die Punkte sortiert als Liste ausgegeben (analog Backend). Bei Z-Index-Problemen diese Checkbox deaktivieren.'];

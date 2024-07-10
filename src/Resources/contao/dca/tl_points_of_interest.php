@@ -64,7 +64,7 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
     'palettes' => [
         '__selector__' => ['addIcon'],
         'default' => '
-            {pois_legend},title,singleSRC,size,includeCss,includeJs;
+            {pois_legend},title,singleSRC,size,useSorting,includeCss,includeJs;
             {icon_legend},addIcon;
         ',
     ],
@@ -159,6 +159,18 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
                 'tl_class' => 'w50',
             ],
             'sql' => "char(1) NOT NULL default '1'",
+        ],
+        'useSorting' => [
+            'exclude' => true,
+            'filter' => true,
+            'default' => '0',
+            'flag' => 1,
+            'inputType' => 'checkbox',
+            'eval' => [
+                'doNotCopy' => true,
+                'tl_class' => 'clr',
+            ],
+            'sql' => "char(1) NOT NULL default '0'",
         ],
     ],
 ];
