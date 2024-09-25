@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Oneup\Contao\ContaoPointsOfInterestBundle\Controller\FrontendModule;
 
 use Contao\CoreBundle\Controller\FrontendModule\AbstractFrontendModuleController;
-use Contao\CoreBundle\DependencyInjection\Attribute\AsFrontendModule;
 use Contao\ModuleModel;
 use Contao\Template;
 use Oneup\Contao\ContaoPointsOfInterestBundle\PointsOfInterest\ResponseRenderer;

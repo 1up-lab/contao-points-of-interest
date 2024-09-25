@@ -6,7 +6,6 @@ namespace Oneup\Contao\ContaoPointsOfInterestBundle\Controller\ContentElement;
 
 use Contao\ContentModel;
 use Contao\CoreBundle\Controller\ContentElement\AbstractContentElementController;
-use Contao\CoreBundle\DependencyInjection\Attribute\AsContentElement;
 use Contao\Template;
 use Oneup\Contao\ContaoPointsOfInterestBundle\PointsOfInterest\ResponseRenderer;
 use Symfony\Component\HttpFoundation\Request;
