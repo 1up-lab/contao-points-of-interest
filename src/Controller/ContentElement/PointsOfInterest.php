@@ -6,11 +6,13 @@ namespace Oneup\Contao\ContaoPointsOfInterestBundle\Controller\ContentElement;
 
 use Contao\ContentModel;
 use Contao\CoreBundle\Controller\ContentElement\AbstractContentElementController;
+use Contao\CoreBundle\DependencyInjection\Attribute\AsContentElement;
 use Contao\Template;
 use Oneup\Contao\ContaoPointsOfInterestBundle\PointsOfInterest\ResponseRenderer;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+#[AsContentElement(category: 'includes')]
 class PointsOfInterest extends AbstractContentElementController
 {
     /**
@@ -23,7 +25,7 @@ class PointsOfInterest extends AbstractContentElementController
         $this->pointsOfInterestResponseRenderer = $pointsOfInterestResponseRenderer;
     }
 
-    protected function getResponse(Template $template, ContentModel $model, Request $request): ?Response
+    protected function getResponse(Template $template, ContentModel $model, Request $request): Response
     {
         return $this->pointsOfInterestResponseRenderer->getResponse($template, $model, $request);
     }

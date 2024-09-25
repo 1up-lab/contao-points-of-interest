@@ -1,9 +1,4 @@
 services:
-    _instanceof:
-        Symfony\Bundle\FrameworkBundle\Controller\AbstractController:
-            calls:
-                - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
-
     oneup_contao_points_of_interest.dca_helper:
         class: Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper
         public: true
@@ -18,7 +13,7 @@ services:
         class: Oneup\Contao\ContaoPointsOfInterestBundle\Provider\ImageSizeProvider
         public: true
         arguments:
-            - '@contao.image.image_sizes'
+            - '@contao.image.sizes'
             - '@security.token_storage'
 
     oneup_contao_points_of_interest.content_element:
@@ -26,14 +21,10 @@ services:
         public: true
         arguments:
             - '@oneup_contao_points_of_interest.response_renderer'
-        tags:
-            - { name: contao.content_element, category: includes }
 
     oneup_contao_points_of_interest.frontend_module:
         class: Oneup\Contao\ContaoPointsOfInterestBundle\Controller\FrontendModule\PointsOfInterest
         public: true
         arguments:
             - '@oneup_contao_points_of_interest.response_renderer'
-        tags:
-            - { name: contao.frontend_module, category: miscellaneous }
 
