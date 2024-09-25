@@ -1,6 +1,11 @@
 services:
     Psr\Container\ContainerInterface: '@service_container'
 
+    _instanceof:
+        Symfony\Bundle\FrameworkBundle\Controller\AbstractController:
+            calls:
+                - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
+
     oneup_contao_points_of_interest.dca_helper:
         class: Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper
         public: true
