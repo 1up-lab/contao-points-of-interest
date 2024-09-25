@@ -1,4 +1,6 @@
 services:
+    Psr\Container\ContainerInterface: '@service_container'
+
     oneup_contao_points_of_interest.dca_helper:
         class: Oneup\Contao\ContaoPointsOfInterestBundle\Dca\Helper
         public: true
