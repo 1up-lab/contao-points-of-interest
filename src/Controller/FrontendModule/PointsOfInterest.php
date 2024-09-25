@@ -12,7 +12,6 @@ use Oneup\Contao\ContaoPointsOfInterestBundle\PointsOfInterest\ResponseRenderer;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsFrontendModule(category: 'miscellaneous')]
 class PointsOfInterest extends AbstractFrontendModuleController
 {
     /**

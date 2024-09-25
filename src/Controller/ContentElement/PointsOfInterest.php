@@ -12,7 +12,6 @@ use Oneup\Contao\ContaoPointsOfInterestBundle\PointsOfInterest\ResponseRenderer;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsContentElement(category: 'includes')]
 class PointsOfInterest extends AbstractContentElementController
 {
     /**

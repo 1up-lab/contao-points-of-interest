@@ -23,10 +23,14 @@ services:
         public: true
         arguments:
             - '@oneup_contao_points_of_interest.response_renderer'
+        tags:
+            - { name: contao.content_element, category: includes }
 
     oneup_contao_points_of_interest.frontend_module:
         class: Oneup\Contao\ContaoPointsOfInterestBundle\Controller\FrontendModule\PointsOfInterest
         public: true
         arguments:
             - '@oneup_contao_points_of_interest.response_renderer'
+        tags:
+            - { name: contao.frontend_module, category: miscellaneous }
 
