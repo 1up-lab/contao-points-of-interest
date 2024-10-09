@@ -7,6 +7,7 @@ $GLOBALS['TL_LANG']['tl_point_of_interest']['configuration_legend'] = 'Configura
 $GLOBALS['TL_LANG']['tl_point_of_interest']['publish_legend'] = 'Visibility';
 $GLOBALS['TL_LANG']['tl_point_of_interest']['link_legend'] = 'Link Settings';
 $GLOBALS['TL_LANG']['tl_point_of_interest']['icon_legend'] = 'Icon Settings';
+$GLOBALS['TL_LANG']['tl_point_of_interest']['expert_legend'] = 'Expert Settings';
 
 $GLOBALS['TL_LANG']['tl_point_of_interest']['new'] = ['New entry', ''];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['edit'] = ['', 'Edit content'];
@@ -27,3 +28,5 @@ $GLOBALS['TL_LANG']['tl_point_of_interest']['url'] = ['URL', 'Enter a web addres
 $GLOBALS['TL_LANG']['tl_point_of_interest']['tstamp'] = ['Revision date', 'Date and time of the latest revision'];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['addIcon'] = ['Add icon', 'Add an icon to the POI.'];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['icon'] = ['Poi Icon', 'Select an icon.'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['cssID'] = ['ID', 'Provide an id for this entry.'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['cssClass'] = ['Class', 'Provide a class for this entry.'];
