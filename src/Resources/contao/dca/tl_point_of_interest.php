@@ -78,7 +78,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             {configuration_legend},position;
             {link_legend},addLink;
             {icon_legend},addIcon;
-            {expert_legend},cssId,cssClass;
+            {expert_legend},cssID,cssClass;
             {publish_legend},published,start,stop;
         ',
     ],
@@ -128,9 +128,17 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'exclude' => true,
             'inputType' => 'text',
             'eval' => [
-                'multiple' => true,
-                'size' => 2,
-                'tl_class' => 'w50 clr',
+                'maxlength' => 255,
+                'tl_class' => 'w50',
+            ],
+            'sql' => "varchar(255) NOT NULL default ''",
+        ],
+        'cssClass' => [
+            'exclude' => true,
+            'inputType' => 'text',
+            'eval' => [
+                'maxlength' => 255,
+                'tl_class' => 'w50',
             ],
             'sql' => "varchar(255) NOT NULL default ''",
         ],

@@ -1,15 +1,16 @@
 <div class="poi-container row">
     <div class="poi-wrapper">
         <?php if ($this->src): ?>
-            <img src="<?= $this->src ?>" />
+            <img src="<?= $this->src ?>" alt=""/>
             <ul>
                 <?php foreach($this->pointOfInterest as $poi): ?>
-                    <li class="single-point" style="top: <?= $poi['position']['pY'] ?>%; left: <?= $poi['position']['pX'] ?>%;">
+                    <li <?php if ($poi['cssID']): ?>id="<?= $poi['cssID'] ?>"<?php endif; ?> class="single-point <?php if ($poi['cssClass']): ?><?= $poi['cssClass'] ?><?php endif; ?>" style="top: <?= $poi['position']['pY'] ?>%; left: <?= $poi['position']['pX'] ?>%;">
                         <?php if (array_key_exists('icon', $poi) && isset($poi['icon'])): ?>
-                            <a class="img-replace poi poi__icon" href="<?= $poi['url'] ?>" <?php if (false === (bool) $poi['addLink']): ?>data-reveal-id="reveal-<?= $poi['id'] ?>"<?php else: ?>target="_blank"<?php endif; ?> style="background-image: url('<?= $poi['icon'] ?>')">More</a>
+                            <a class="img-replace poi poi__icon" href="<?= $poi['url'] ?>" <?php if (false === (bool) $poi['addLink']): ?>data-reveal-id="reveal-<?= $poi['id'] ?>" <?php else: ?>target="_blank"<?php endif; ?> style="background-image: url('<?= $poi['icon'] ?>')">More</a>
                         <?php else: ?>
-                            <a class="img-replace poi" href="<?= $poi['url'] ?>" <?php if (false === (bool) $poi['addLink']): ?>data-reveal-id="reveal-<?= $poi['id'] ?>"<?php else: ?>target="_blank"<?php endif; ?>>More</a>
+                            <a class="img-replace poi" href="<?= $poi['url'] ?>" <?php if (false === (bool) $poi['addLink']): ?>data-reveal-id="reveal-<?= $poi['id'] ?>" <?php else: ?>target="_blank"<?php endif; ?>>More</a>
                         <?php endif; ?>
+
                         <?php if (false === (bool) $poi['addLink']): ?>
                             <div id="reveal-<?= $poi['id'] ?>" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
                                 <?= implode('', $poi['content']) ?>
