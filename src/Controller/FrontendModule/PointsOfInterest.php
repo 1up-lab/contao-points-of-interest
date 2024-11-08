@@ -23,7 +23,7 @@ class PointsOfInterest extends AbstractFrontendModuleController
         $this->pointsOfInterestResponseRenderer = $pointsOfInterestResponseRenderer;
     }
 
-    protected function getResponse(Template $template, ModuleModel $model, Request $request): ?Response
+    protected function getResponse(Template $template, ModuleModel $model, Request $request): Response
     {
         return $this->pointsOfInterestResponseRenderer->getResponse($template, $model, $request);
     }

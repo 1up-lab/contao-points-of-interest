@@ -23,7 +23,7 @@ class PointsOfInterest extends AbstractContentElementController
         $this->pointsOfInterestResponseRenderer = $pointsOfInterestResponseRenderer;
     }
 
-    protected function getResponse(Template $template, ContentModel $model, Request $request): ?Response
+    protected function getResponse(Template $template, ContentModel $model, Request $request): Response
     {
         return $this->pointsOfInterestResponseRenderer->getResponse($template, $model, $request);
     }

@@ -20,12 +20,12 @@
   ],
   "require": {
     "ext-json": "*",
-    "php": "^7.2 || ^8.0",
-    "contao/core-bundle": "^4.9"
+    "php": "^8.1",
+    "contao/core-bundle": "^4.13 || ^5.3"
   },
   "require-dev": {
     "contao/manager-plugin": "^2.0",
-    "friendsofphp/php-cs-fixer": "^2.13"
+    "friendsofphp/php-cs-fixer": "^3.64"
   },
   "config": {
     "sort-packages": true

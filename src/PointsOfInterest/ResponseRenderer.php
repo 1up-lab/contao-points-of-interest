@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Oneup\Contao\ContaoPointsOfInterestBundle\PointsOfInterest;
 
 use Contao\ContentModel;
-use Contao\Controller;
+use Contao\CoreBundle\Image\Studio\Studio;
+use Contao\File;
 use Contao\FilesModel;
 use Contao\Frontend;
 use Contao\Model;
@@ -18,6 +19,11 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ResponseRenderer
 {
+    public function __construct(
+        private readonly Studio $studio
+    ) {
+    }
+
     public function getResponse(Template $template, Model $model, Request $request): ?Response
     {
         $poi = PointsOfInterestModel::findOneBy('id', $model->poi_id);
@@ -36,15 +42,21 @@ class ResponseRenderer
 
         $poiIcon = $poi->addIcon ? $this->getIconPath($poi->icon) : null;
         $poi->size = StringUtil::deserialize($poi->size);
-        $poi->singleSRC = $fileModel->path;
-        $file = new \File($fileModel->path);
+        $file = new File($fileModel->path);
 
         $imgSize = $file->imageSize;
 
         $template->pointsOfInterest = $poi->row();
         $pointsOfInterest = [];
 
-        Controller::addImageToTemplate($template, $poi->row());
+        $figure = $this->studio
+            ->createFigureBuilder()
+            ->fromUuid($poi->singleSRC ?: '')
+            ->setSize(StringUtil::deserialize($poi->size))
+            ->buildIfResourceExists()
+        ;
+
+        $figure?->applyLegacyTemplateData($template);
 
         while (null !== $pois && $pois->next()) {
             $tempPoi = $pois->row();

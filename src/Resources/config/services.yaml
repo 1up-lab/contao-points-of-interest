@@ -1,4 +1,6 @@
 services:
+    Psr\Container\ContainerInterface: '@service_container'
+
     _instanceof:
         Symfony\Bundle\FrameworkBundle\Controller\AbstractController:
             calls:
@@ -13,12 +15,14 @@ services:
     oneup_contao_points_of_interest.response_renderer:
         class: Oneup\Contao\ContaoPointsOfInterestBundle\PointsOfInterest\ResponseRenderer
         public: true
+        arguments:
+            - '@contao.image.studio'
 
     oneup_contao_points_of_interest.image_size_provider:
         class: Oneup\Contao\ContaoPointsOfInterestBundle\Provider\ImageSizeProvider
         public: true
         arguments:
-            - '@contao.image.image_sizes'
+            - '@contao.image.sizes'
             - '@security.token_storage'
 
     oneup_contao_points_of_interest.content_element:
