@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
     'config' => [
-        'dataContainer' => 'Table',
+        'dataContainer' => Contao\DC_Table::class,
         'ctable' => ['tl_point_of_interest'],
         'switchToEdit' => true,
         'enableVersioning' => true,
