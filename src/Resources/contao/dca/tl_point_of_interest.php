@@ -78,6 +78,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             {configuration_legend},position;
             {link_legend},addLink;
             {icon_legend},addIcon;
+            {text_legend},addCustomLabel;
             {expert_legend},cssID,cssClass;
             {publish_legend},published,start,stop;
         ',
@@ -86,6 +87,7 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
     'subpalettes' => [
         'addLink' => 'url',
         'addIcon' => 'icon',
+        'addCustomLabel' => 'customLabel',
     ],
 
     'fields' => [
@@ -193,6 +195,23 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
                 'mandatory' => true,
             ],
             'sql' => 'binary(16) NULL',
+        ],
+        'addCustomLabel' => [
+            'exclude' => true,
+            'inputType' => 'checkbox',
+            'eval' => [
+                'submitOnChange' => true,
+                'tl_class' => 'clr',
+            ],
+            'sql' => "char(1) NOT NULL default ''",
+        ],
+        'customLabel' => [
+            'exclude' => true,
+            'inputType' => 'text',
+            'eval' => [
+                'tl_class' => 'w50',
+            ],
+            'sql' => "varchar(255) NOT NULL default ''",
         ],
     ],
 ];

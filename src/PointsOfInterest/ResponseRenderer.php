@@ -74,6 +74,8 @@ class ResponseRenderer
                 $tempPoi['icon'] = $poiIcon;
             }
 
+            $tempPoi['label'] = $poi['addCustomLabel'] ? $poi['customLabel'] : 'More';
+
             $elements = [];
 
             if (false === (bool) $poi->addLink) {

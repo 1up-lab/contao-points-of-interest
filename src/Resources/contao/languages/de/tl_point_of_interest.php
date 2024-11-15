@@ -8,6 +8,7 @@ $GLOBALS['TL_LANG']['tl_point_of_interest']['publish_legend'] = 'Sichtbarkeit';
 $GLOBALS['TL_LANG']['tl_point_of_interest']['link_legend'] = 'Link-Einstellungen';
 $GLOBALS['TL_LANG']['tl_point_of_interest']['icon_legend'] = 'Icon';
 $GLOBALS['TL_LANG']['tl_point_of_interest']['expert_legend'] = 'Experteneinstellungen';
+$GLOBALS['TL_LANG']['tl_point_of_interest']['text_legend'] = 'Texteinstellungen';
 
 $GLOBALS['TL_LANG']['tl_point_of_interest']['new'] = ['Neuer Eintrag', ''];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['edit'] = ['', 'Inhalte bearbeiten'];
@@ -30,3 +31,5 @@ $GLOBALS['TL_LANG']['tl_point_of_interest']['addIcon'] = ['Icon hinzufügen', 'F
 $GLOBALS['TL_LANG']['tl_point_of_interest']['icon'] = ['Poi Icon', 'Wählen Sie ein Icon aus.'];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['cssID'] = ['ID', 'Geben Sie eine ID für diesen Punkt ein.'];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['cssClass'] = ['Klasse', 'Geben Sie eine Klasse für diesen Punkt ein.'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['addCustomLabel'] = ['Benutzerdefiniertes Label erstellen', 'Fügt dem POI ein Benutzerdefiniertes Label hinzu.'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['customLabel'] = ['Benutzerdefiniertes Label', 'Geben Sie das Benutzerdefinierte Label ein.'];
