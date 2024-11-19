@@ -7,12 +7,14 @@ namespace Oneup\Contao\ContaoPointsOfInterestBundle\Dca;
 use Contao\Backend;
 use Contao\BackendUser;
 use Contao\ContentModel;
+use Contao\DataContainer;
 use Contao\Environment;
 use Contao\File;
 use Contao\FilesModel;
 use Contao\Image;
 use Contao\Input;
 use Contao\Message;
+use Contao\PageModel;
 use Contao\StringUtil;
 use Contao\Versions;
 use Oneup\Contao\ContaoPointsOfInterestBundle\Model\PointsOfInterestModel;
@@ -24,16 +26,6 @@ class Helper extends Backend
     public function __construct(TokenStorageInterface $tokenStorage)
     {
         parent::__construct();
-
-        $token = $tokenStorage->getToken();
-
-        if ($token instanceof TokenInterface) {
-            $user = $token->getUser();
-
-            if ($user instanceof BackendUser) {
-                $this->User = $user;
-            }
-        }
     }
 
     public function getPointsOfInterest(): array
@@ -55,7 +47,7 @@ class Helper extends Backend
         return $pois;
     }
 
-    public function storeFileMetaInformation($varValue, \DataContainer $dc)
+    public function storeFileMetaInformation($varValue, DataContainer $dc)
     {
         if ($dc->activeRecord->singleSRC === $varValue) {
             return $varValue;
@@ -71,7 +63,7 @@ class Helper extends Backend
                     ->execute($dc->activeRecord->pid);
 
                 if ($objPage->numRows) {
-                    $objModel = new \PageModel();
+                    $objModel = new PageModel();
                     $objModel->setRow($objPage->row());
                     $objModel->loadDetails();
 
@@ -93,6 +85,16 @@ class Helper extends Backend
     {
         if ($_POST || 'edit' !== Input::get('act')) {
             return;
+        }
+
+        $token = $this->tokenStorage->getToken();
+
+        if ($token instanceof TokenInterface) {
+            $user = $token->getUser();
+
+            if ($user instanceof BackendUser) {
+                $this->User = $user;
+            }
         }
 
         // Return if the user cannot access the layout module (see #6190)
