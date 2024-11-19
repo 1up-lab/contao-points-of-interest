@@ -23,7 +23,7 @@ use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 
 class Helper extends Backend
 {
-    public function __construct(TokenStorageInterface $tokenStorage)
+    public function __construct(private readonly TokenStorageInterface $tokenStorage)
     {
         parent::__construct();
     }
