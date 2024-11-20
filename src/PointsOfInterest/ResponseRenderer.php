@@ -74,7 +74,7 @@ class ResponseRenderer
                 $tempPoi['icon'] = $poiIcon;
             }
 
-            $tempPoi['label'] = $poi['addCustomLabel'] ? $poi['customLabel'] : null;
+            $tempPoi['label'] = $poi->addCustomLabel ? $poi->customLabel : null;
 
             $elements = [];
 
