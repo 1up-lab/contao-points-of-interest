@@ -62,7 +62,6 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'toggle' => [
                 'href' => 'act=toggle&amp;field=published',
                 'icon' => 'visible.svg',
-                'button_callback' => ['oneup_contao_points_of_interest.dca_helper', 'togglePoiIcon'],
             ],
             'show' => [
                 'href' => 'act=show',
