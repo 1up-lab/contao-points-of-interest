@@ -159,47 +159,4 @@ class Helper extends Backend
 
         return '<a href="' . self::addToUrl($href) . '" title="' . StringUtil::specialchars($title) . '"' . $attributes . '>' . Image::getHtml($icon, $label) . '</a> ';
     }
-
-    public function togglePoiIcon($row, $href, $label, $title, $icon, $attributes): string
-    {
-        $tid = Input::get('tid');
-
-        if (null !== $tid && '' !== $tid) {
-            $this->toggleVisibility(Input::get('tid'), (1 === (int) Input::get('state')));
-
-            if (Environment::get('isAjaxRequest')) {
-                exit;
-            }
-
-            self::redirect(self::getReferer());
-        }
-
-        $href .= '&amp;id=' . Input::get('id') . '&amp;tid=' . $row['id'] . '&amp;state=' . ($row['published'] ? '' : 1);
-
-        if (!$row['published']) {
-            $icon = 'invisible.gif';
-        }
-
-        return '<a href="' . self::addToUrl($href) . '" title="' . StringUtil::specialchars($title) . '"' . $attributes . '>' . Image::getHtml($icon, $label, 'data-state="' . ($row['published'] ? 1 : 0) . '"') . '</a> ';
-    }
-
-    public function toggleVisibility($intId, $blnVisible): void
-    {
-        $objVersions = new Versions('tl_point_of_interest', $intId);
-        $objVersions->initialize();
-
-        // Trigger the save_callback
-        if (\is_array($GLOBALS['TL_DCA']['tl_point_of_interest']['fields']['published']['save_callback'] ?? null)) {
-            foreach ($GLOBALS['TL_DCA']['tl_point_of_interest']['fields']['published']['save_callback'] as $callback) {
-                $this->import($callback[0]);
-                $blnVisible = $this->$callback[0]->$callback[1]($blnVisible, $this);
-            }
-        }
-
-        $this->Database
-            ->prepare('UPDATE tl_point_of_interest SET tstamp=' . time() . ", published='" . ($blnVisible ? 1 : '') . "' WHERE id=?")
-            ->execute($intId);
-
-        $objVersions->create();
-    }
 }
