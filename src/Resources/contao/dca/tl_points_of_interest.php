@@ -32,9 +32,9 @@ $GLOBALS['TL_DCA']['tl_points_of_interest'] = [
         'operations' => [
             'edit',
             'children',
-            '!copy',
-            '!delete',
-            '!show',
+            'copy',
+            'delete',
+            'show',
         ],
     ],
 
