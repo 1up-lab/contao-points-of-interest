@@ -27,46 +27,21 @@ $GLOBALS['TL_DCA']['tl_point_of_interest'] = [
             'child_record_class' => 'no_padding',
         ],
         'global_operations' => [
-            'all' => [
-                'label' => &$GLOBALS['TL_LANG']['MSC']['all'],
-                'href' => 'act=select',
-                'class' => 'header_edit_all',
-                'attributes' => 'onclick="Backend.getScrollOffset()" accesskey="e"',
-            ],
+            'all',
         ],
         'operations' => [
-            'edit' => [
+            'edit',
+            'children' => [
                 'href' => 'table=tl_content',
-                'icon' => 'edit.svg',
-                'attributes' => 'class="contextmenu"',
+                'icon' => 'children.svg',
                 'button_callback' => ['oneup_contao_points_of_interest.dca_helper', 'editPoiIcon'],
+                'primary' => true,
             ],
-            'editheader' => [
-                'href' => 'act=edit',
-                'icon' => 'header.svg',
-                'attributes' => 'class="edit-header"',
-            ],
-            'copy' => [
-                'href' => 'act=paste&amp;mode=copy',
-                'icon' => 'copy.svg',
-            ],
-            'cut' => [
-                'href' => 'act=paste&amp;mode=cut',
-                'icon' => 'cut.svg',
-            ],
-            'delete' => [
-                'href' => 'act=delete',
-                'icon' => 'delete.svg',
-                'attributes' => 'onclick="if(!confirm(\'' . ($GLOBALS['TL_LANG']['MSC']['deleteConfirm'] ?? null) . '\'))return false;Backend.getScrollOffset()"',
-            ],
-            'toggle' => [
-                'href' => 'act=toggle&amp;field=published',
-                'icon' => 'visible.svg',
-            ],
-            'show' => [
-                'href' => 'act=show',
-                'icon' => 'show.svg',
-            ],
+            '!copy',
+            '!cut',
+            '!delete',
+            'toggle',
+            '!show',
         ],
     ],
 

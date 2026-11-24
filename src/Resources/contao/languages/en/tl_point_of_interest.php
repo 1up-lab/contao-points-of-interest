@@ -11,13 +11,13 @@ $GLOBALS['TL_LANG']['tl_point_of_interest']['expert_legend'] = 'Expert Settings'
 $GLOBALS['TL_LANG']['tl_point_of_interest']['text_legend'] = 'Text Settings';
 
 $GLOBALS['TL_LANG']['tl_point_of_interest']['new'] = ['New entry', ''];
-$GLOBALS['TL_LANG']['tl_point_of_interest']['edit'] = ['', 'Edit content'];
-$GLOBALS['TL_LANG']['tl_point_of_interest']['editheader'] = ['', 'Edit entry'];
-$GLOBALS['TL_LANG']['tl_point_of_interest']['copy'] = ['', 'Copy entry'];
-$GLOBALS['TL_LANG']['tl_point_of_interest']['cut'] = ['', 'Move entry'];
-$GLOBALS['TL_LANG']['tl_point_of_interest']['delete'] = ['', 'Delete entry'];
-$GLOBALS['TL_LANG']['tl_point_of_interest']['show'] = ['', 'Show details'];
-$GLOBALS['TL_LANG']['tl_point_of_interest']['toggle'] = ['', 'Toggle visibility'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['edit'] = ['Edit entry', 'Edit entry'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['children'] = ['Edit content', 'Edit content'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['copy'] = ['Copy', 'Copy entry'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['cut'] = ['Move', 'Move entry'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['delete'] = ['Delete', 'Delete entry'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['show'] = ['Show', 'Show details'];
+$GLOBALS['TL_LANG']['tl_point_of_interest']['toggle'] = ['Toggle visibility', 'Toggle visibility'];
 
 $GLOBALS['TL_LANG']['tl_point_of_interest']['title'] = ['Title', 'Provide a title for this entry.'];
 $GLOBALS['TL_LANG']['tl_point_of_interest']['position'] = ['Position', 'Choose the position of the point directly on the image.'];

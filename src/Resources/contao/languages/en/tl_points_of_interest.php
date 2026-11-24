@@ -6,11 +6,11 @@ $GLOBALS['TL_LANG']['tl_points_of_interest']['pois_legend'] = 'Image settings';
 $GLOBALS['TL_LANG']['tl_points_of_interest']['icon_legend'] = 'Icon settings';
 
 $GLOBALS['TL_LANG']['tl_points_of_interest']['new'] = ['New entry', ''];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['edit'] = ['', 'Edit Points of Interest'];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['editheader'] = ['', 'Edit entry'];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['copy'] = ['', 'Copy entry'];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['delete'] = ['', 'Delete entry'];
-$GLOBALS['TL_LANG']['tl_points_of_interest']['show'] = ['', 'Show details'];
+$GLOBALS['TL_LANG']['tl_points_of_interest']['edit'] = ['Edit entry', 'Edit entry'];
+$GLOBALS['TL_LANG']['tl_points_of_interest']['children'] = ['Edit points', 'Edit points'];
+$GLOBALS['TL_LANG']['tl_points_of_interest']['copy'] = ['Copy', 'Copy entry'];
+$GLOBALS['TL_LANG']['tl_points_of_interest']['delete'] = ['Delete', 'Delete entry'];
+$GLOBALS['TL_LANG']['tl_points_of_interest']['show'] = ['Show', 'Show details'];
 
 $GLOBALS['TL_LANG']['tl_points_of_interest']['title'] = ['Title', 'Title of this POI configuration (only visible in the backend).'];
 $GLOBALS['TL_LANG']['tl_points_of_interest']['singleSRC'] = ['Image target', 'Choose your image here.'];
